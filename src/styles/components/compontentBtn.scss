@@ -1,0 +1,14 @@
+.common-btn {
+  border: 1px solid #86827e;
+  background-color: rgba(28, 28, 28, 0);
+  height: 48px;
+  width: 183px;
+  border-radius: 0px;
+}
+
+@media screen and (max-width: 1439px) {
+  .common-btn {
+    width: 157px;
+    height: 42px;
+  }
+}

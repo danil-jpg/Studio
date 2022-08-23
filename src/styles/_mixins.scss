@@ -1,0 +1,30 @@
+@mixin typographic(
+  $c: $textColor2,
+  $fs: 16,
+  $lh,
+  $ls,
+  $ff: "Montserrat",
+  $fw: 400,
+  $op: 1
+) {
+  color: $c;
+  font-size: calc($fs / 16 * 1em);
+  line-height: $lh/$fs;
+  letter-spacing: $ls;
+  font-family: $ff;
+  font-weight: $fw;
+  opacity: $op;
+}
+
+@mixin fs($fs: 16) {
+  font-size: calc($fs / 16 * 1em);
+}
+
+@mixin lh($lh: 24, $fs: 16) {
+  line-height: calc($lh/$fs);
+}
+
+@mixin fl($fs: 16, $lh: 24) {
+  font-size: calc($fs / 16 * 1em);
+  line-height: calc($lh/$fs);
+}
