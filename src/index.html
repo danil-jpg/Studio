@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>test1</title>
+        <title>home</title>
         <link rel="stylesheet" href="./styles/main.min.css">
     </head>
     <body class="mainPage">
@@ -15,7 +15,47 @@
         <!-- Header -->
         <main class="IndexPage">
             <section class="slide">
-                <div class="swiper">
+                <div class="slide__content">
+                    <h1 class="slider__title">
+                        Thoughtful 
+    making of space
+                    </h1>
+                    @@include("./html/discoverBtn.html", {
+                        "class" : "button-with-lines_mainPage ",
+                        "btn-class" : "",
+                        "title" : "Discover more"
+                    })
+                    <div class="slide__pagination ">
+                        <img src="img/mainPage/leftArrow.webp" alt="leftArrow" class="leftArrow swiper-button-prev">
+                        <p class="slide__num common-font-11">01</p>
+                        <img src="img/mainPage/line.webp" alt="line" class="line ">
+                        <p class="slide__num common-font-11">02</p>
+                        <img src="img/mainPage/rightArrow.webp" alt="rightArrow" class="rightArrow swiper-button-next">
+                    </div>
+                    <div class="slide__bottom">
+                        <div class="slide__language">
+                            <p class="slide__lang common-font-11">Fb</p>
+                            <p class="slide__lang common-font-11">In</p>
+                            <p class="slide__lang common-font-11">Be</p>
+                        </div>
+                        <button class="slide__berlin">
+                            <img src="img/mainPage/point.webp" alt="point" class="point">
+                            <span class="common-font-11 Berlin">Berlin</span>
+                            <img src="img/mainPage/arrow_bottom.webp" alt="arrow_bottom" class="arrow_bottom">
+                        </button>
+                        <a href="#" class="slide__tel common-font-11">+380983527547</a>
+                        <a href="#" class="slide__email common-font-11">E: info@gmail.com</a>
+                    </div>
+                    <div class="slide__ver-block">
+                        <p class="slide__ver-block-title">Next Project</p>
+                        <p class="slide__ver-block-text">
+                            Perfect 
+                            proportions
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="swiper__wrapper"> -->
+                <div class="swiper ">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -23,15 +63,18 @@
                             <img src="img/mainPage/firstSlide.webp" alt="firstSlide">
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/mainPage/secondSlide.webp" alt="firstSlide">
+                            <div class="second-slide"></div>
+                            <!-- <img src="img/mainPage/secondSlide.webp" alt="firstSlide"> -->
                         </div>
                     </div>
                     <!-- <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div> -->
+    
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
                 </div>
+                <!-- </div> -->
             </section>
+            <!-- <div class="hor_line"></div> -->
             <section class="test"></section>
         </main>
         <script src="scripts/main.js"></script>

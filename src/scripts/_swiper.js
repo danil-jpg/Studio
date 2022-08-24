@@ -5,7 +5,7 @@ function slider() {
   // init Swiper:
   const swiper = new Swiper(".swiper", {
     spaceBetween: 0,
-    slidesPerView: 1.2,
+    slidesPerView: 1.175,
     centeredSlides: true,
     centeredSlides: false,
     roundLengths: true,

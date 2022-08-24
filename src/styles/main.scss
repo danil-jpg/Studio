@@ -1,8 +1,9 @@
 @import "fonts";
 @import "reset";
 @import "vars";
-@import "mixins";
+@import "components/_mixins.scss";
 @import "components/compontentBtn.scss";
+@import "components/DiscoverBtn.scss";
 @import "header";
 @import "mainPage";
 @import "../../node_modules/swiper/swiper-bundle.css";
@@ -10,4 +11,8 @@
 body {
   font-family: "Montserrat";
   position: relative;
+}
+
+button {
+  cursor: pointer;
 }

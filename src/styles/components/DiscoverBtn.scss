@@ -1,0 +1,44 @@
+@import "mixins";
+@import "../vars";
+
+.button-with-lines {
+  display: flex;
+  align-items: center;
+
+  // .button-with-lines_btn
+  &_btn {
+    background: transparent;
+    border: none;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    @include fs(10);
+    @include lh(12, 10);
+    // text-align: right;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: $textColor1;
+  }
+}
+.hor {
+  // .hor_line-s
+  &_line-s {
+    transform: translate(-2px, 0);
+
+    width: 8px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  // .hor_line-b
+
+  &_line-b {
+    width: 56px;
+    height: 1px;
+    transform: translate(2px, 0);
+    background: rgba(255, 255, 255, 0.4);
+  }
+}
