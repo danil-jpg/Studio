@@ -1,0 +1,46 @@
+.side_text {
+  position: absolute;
+
+  .side_text__hor_line {
+    width: 57px;
+    height: 1px;
+    background: #828282;
+    opacity: 0.16;
+    transform: rotate(-90deg);
+
+    margin-left: 0px;
+    margin-top: 66px;
+  }
+
+  .side_descr {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 14px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: block;
+    /* 5 */
+
+    color: #828282;
+
+    opacity: 0.32;
+    transform: rotate(-90deg);
+  }
+}
+
+.phil__side_text {
+  top: 229px;
+  left: 38px;
+}
+
+.phil__side_text_bottom {
+  bottom: 153px;
+  right: 31px;
+
+  .phil__bottom_line {
+    margin-left: 13px;
+    margin-top: 72px;
+  }
+}

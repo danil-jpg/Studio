@@ -60,22 +60,44 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img src="img/mainPage/firstSlide.webp" alt="firstSlide">
+                            <div class="first-slide"></div>
                         </div>
                         <div class="swiper-slide">
                             <div class="second-slide"></div>
                             <!-- <img src="img/mainPage/secondSlide.webp" alt="firstSlide"> -->
                         </div>
                     </div>
-                    <!-- <div class="swiper-pagination"></div>
-    
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div> -->
                 </div>
                 <!-- </div> -->
             </section>
-            <!-- <div class="hor_line"></div> -->
-            <section class="test"></section>
+            <section class="phil">
+                <div class="phil__descr_wrapper">
+                    <h1 class="phil__title">Company Philosophy</h1>
+                    <p class="phil__descr phil__descr_1">The basic philosophy of our studio is to create individual, aesthetically stunning solutions for our customers by lightning-fast development of projects employing unique styles and architecture. Even if you don't have a ready sketch of what you want - we will help you get the result.</p>
+                    <p class="phil__descr phil__descr_2">We can also help you create harmony out of seemingly completely incompatible elements in the interior or the exterior design. Do you want to combine classics and abstract art? Modern and retro? Love everything associated with the 1940's? No problem!</p>
+                </div>
+                @@include("./html/discoverBtn.html",{
+                    "class" : "phil__button",
+                    "btn-class" : "phil__button_black",
+                    "hor_lines_color" : "phil__hor_line",
+                    "title" : "Discover more"
+                });
+                <img src="img/mainPage/table_1.webp" alt="table_1" class="phil__img-1">
+                <img src="img/mainPage/Bedroom_1.webp" alt="Bedroom_1" class="phil__img-2">
+                <img src="img/mainPage/sofas_1.webp" alt="sofas_1" class="phil__img-3">
+                <p class="phil__quote">“</p>
+                <p class="phil__text-bottom">We can also help you create harmony out of seemingly completely incompatible elements in the interior or the exterior design.</p>
+                @@include("./html/sideComp.html",{
+                    "class_wrapper" : "phil__side_text",
+                    "title" : "ABOUT",
+                })
+
+                @@include("./html/sideComp.html",{
+                    "class_wrapper" : "phil__side_text_bottom",
+                    "title" : "Ceo company",
+                    "line_margin" : "phil__bottom_line"
+                })
+            </section>
         </main>
         <script src="scripts/main.js"></script>
     </body>

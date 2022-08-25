@@ -4,6 +4,7 @@
 @import "components/_mixins.scss";
 @import "components/compontentBtn.scss";
 @import "components/DiscoverBtn.scss";
+@import "components/sideBtn";
 @import "header";
 @import "mainPage";
 @import "../../node_modules/swiper/swiper-bundle.css";
@@ -11,8 +12,13 @@
 body {
   font-family: "Montserrat";
   position: relative;
+  background-color: #fafafa;
 }
 
 button {
   cursor: pointer;
 }
+
+// * {
+//   border: 1px red solid;
+// }

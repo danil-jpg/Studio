@@ -15,6 +15,12 @@ function slider() {
       prevEl: ".swiper-button-prev",
     },
     modules: [Navigation, Pagination],
+
+    breakpoints: {
+      1024: {
+        slidesPerView: 1.18,
+      },
+    },
   });
 }
 
