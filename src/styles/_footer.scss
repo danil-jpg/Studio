@@ -1,0 +1,157 @@
+@import "./components/mixins";
+
+.footer {
+  width: 100%;
+}
+
+.footerHomePage {
+  display: inline-block;
+  background-image: url(../img/mainPage/footer.webp);
+  height: 669px;
+  margin-top: 0px;
+}
+
+.footer__btn_wrapper {
+  transform: translate(30px, 135px);
+
+  .footer__long_line {
+    margin-top: 81px;
+    width: 74px;
+  }
+}
+
+.footer__content_block {
+  width: 1052px;
+  margin: 0 auto;
+}
+
+.footer__title {
+  width: 272px;
+  height: 35px;
+  left: 194px;
+  top: 6153px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  @include fs(36);
+  @include lh(44, 36);
+  color: #ffffff;
+  margin-top: 120px;
+}
+
+.footer__descr {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  @include fs(14);
+  @include lh(24, 14);
+
+  color: #ffffff;
+  opacity: 0.6;
+  width: 390px;
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.footer__cities {
+  margin-top: 34px;
+  width: 635px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__city-1 {
+  width: 133px;
+}
+
+.footer__city-2 {
+  width: 162px;
+  transform: translate(-4px);
+}
+
+.footer__city-2 {
+  width: 154px;
+}
+
+.footer__city_name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+
+  @include fs(16);
+  @include lh(22, 16);
+  color: #ffffff;
+}
+
+.footer__adress {
+  width: 136px;
+  height: 53px;
+  left: 194px;
+  top: 6360px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+
+  @include fs(11);
+  @include lh(20, 11);
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.footer__btn_req {
+  margin-top: 63px;
+  background: white;
+}
+
+.footer__lang {
+  color: white;
+}
+
+.footer__info {
+  transform: translate(948px, -207px);
+  display: flex;
+  flex-direction: column;
+  width: 78px;
+  color: #fff;
+
+  .slide__email {
+    color: white;
+  }
+
+  .slide__language {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+  }
+}
+
+.footer__copyright {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  @include fs(12);
+  @include lh(18, 12);
+
+  color: #828282;
+  transform: translate(-130px, 53px);
+}
+
+.footer__pic {
+  display: flex;
+  align-items: center;
+  transform: translate(972px, 10px);
+  width: 209px;
+
+  p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #828282;
+  }
+
+  img {
+    transform: translate(25px, 2px);
+  }
+}
