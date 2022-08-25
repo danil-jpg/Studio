@@ -98,6 +98,67 @@
                     "line_margin" : "phil__bottom_line"
                 })
             </section>
+            <section class="gallery">
+                <div class="gallery_content_wrapper">
+                    <h2 class="gallery__title">Our Projects</h2>
+                    <p class="gallery__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
+                    </p>
+                    <p class="gallery__text_opacity">
+                        We have
+                        <span class="fade-text">more 56 project</span>
+                    </p>
+                </div>
+                @@include("./html/sideComp.html",{
+                    "class_wrapper" : "gallery__side_text_bottom",
+                    "title" : "Projects",
+                    "line_margin" : "gallery__bottom_line"
+                })
+                <div class="gallery__imgs_template">
+                    <div class="gallery__imgs_wrapper pic_1">
+                        <img src="img/mainPage/Pic_1.webp" alt="Pic_1" class="img_1">
+                    </div>
+                    <div class="gallery__imgs_wrapper pic_2">
+                        <img src="img/mainPage/Pic_2.webp" alt="Pic_2" class="img_2">
+                    </div>
+                    <div class="gallery__imgs_wrapper pic_3">
+                        <img src="img/mainPage/Pic_3.webp" alt="Pic_2" class="img_3">
+                    </div>
+                    <div class="gallery__imgs_wrapper pic_4">
+                        <img src="img/mainPage/Pic_4.webp" alt="Pic_1" class="img_4">
+                    </div>
+                    <div class="gallery__imgs_wrapper pic_5">
+                        <img src="img/mainPage/Pic_5.webp" alt="Pic_1" class="img_5">
+                    </div>
+                </div>
+                <div class="gallery__bottom">
+                    @@include("./html/sideComp.html",{
+                        "class_wrapper" : "gallery__bottom_side_text_bottom",
+                        "title" : "MAKE request",
+                        "line_margin" : "gallery__bottom_line"
+                    })
+                    <p class="gallery__bottom_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <img src="img/mainPage/Collage.webp" alt="Collage" class="gallery__bottom_collage">
+                    <p class="gallery__bottom_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
+                    @@include("./html/commonBtn.html",{
+                        "class1" : "gallery__bottom_btn",
+                        "class2" : " ",
+                        "title" : "Make request"
+                    })
+                </div>
+            </section>
+            <section class="picture">
+                <h3 class="picture__title">@lorem.ipsum</h3>
+                <p class="picture_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere.</p>
+                <img src="img/mainPage/pic_section_1.webp" alt="pic" class="picture__pic picture__pic_1">
+                <img src="img/mainPage/pic_section_2.webp" alt="pic" class="picture__pic picture__pic_2">
+                <img src="img/mainPage/pic_section_3.webp" alt="pic" class="picture__pic picture__pic_3">
+                <img src="img/mainPage/pic_section_4.webp" alt="pic" class="picture__pic picture__pic_4">
+                <img src="img/mainPage/pic_section_5.webp" alt="pic" class="picture__pic picture__pic_5">
+                <img src="img/mainPage/pic_section_6.webp" alt="pic" class="picture__pic picture__pic_6">
+                <img src="img/mainPage/pic_section_7.webp" alt="pic" class="picture__pic picture__pic_7">
+                <img src="img/mainPage/pic_section_8.webp" alt="pic" class="picture__pic picture__pic_8">
+            </section>
         </main>
         <script src="scripts/main.js"></script>
     </body>

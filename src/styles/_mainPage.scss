@@ -321,7 +321,7 @@ body.mainPage {
   font-style: normal;
   font-weight: 700;
   font-size: 2.25em;
-  @include lh(44/36);
+  @include lh(44, 36);
   color: #080808;
   margin-left: 795px;
   margin-top: 78px;
@@ -342,6 +342,258 @@ body.mainPage {
 
   margin-top: -61px;
   display: inline-block;
+}
+
+.gallery {
+  width: 1440px;
+  height: 3118px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: radial-gradient(50% 50% at 50% 50%, #0f0f0f 0, #080808 100%);
+  display: inline-block;
+  font-size: 16px;
+}
+
+.gallery_content_wrapper {
+  display: block;
+  color: white;
+  width: 735px;
+  /* margin-top: 147px; */
+  margin: 0 auto;
+  margin-top: 141px;
+}
+
+.gallery__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25em;
+  @include lh(44, 36);
+  color: #ffffff;
+  width: 236px;
+  margin: 0 auto;
+}
+
+.gallery__descr {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.875em;
+  @include lh(24, 14);
+  text-align: center;
+  color: #828282;
+  width: 449px;
+  margin: 0 auto;
+  margin-top: 31px;
+  text-align: center;
+}
+
+.gallery__text_opacity {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  @include fs(56);
+  @include lh(68, 56);
+  color: #ffffff;
+  opacity: 0.06;
+  margin-top: 88px;
+
+  .fade-text {
+    opacity: 0.001;
+    transition: 0.5s all;
+  }
+
+  .fade-text:hover {
+    opacity: 1;
+    transition: 0.5s all;
+  }
+}
+
+.gallery__imgs_template {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 653px;
+  width: 1314px;
+  grid-gap: 8px;
+
+  margin: 0 auto;
+  margin-top: -81px;
+}
+.gallery__imgs_wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  img {
+    transition: 0.3s all;
+  }
+  img:hover {
+    transition: 0.3s all;
+    transform: scale(1.21);
+  }
+}
+
+.gallery__imgs_wrapper.pic_3 {
+  display: grid;
+  grid-column: 1/3;
+}
+
+// .gallery__text_opacity:hover {
+//   opacity: 0.06;
+//   transition: 0.5s all;
+// }
+.gallery__bottom {
+  position: relative;
+  width: 1051px;
+  margin: 0 auto;
+  .gallery__bottom_side_text_bottom {
+    transform: translate(-171px, 54px);
+  }
+  .gallery__bottom_line {
+    margin-left: 15px;
+    margin-top: 79px;
+  }
+}
+
+.gallery__bottom_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  width: 424px;
+  margin-top: 174px;
+  margin-left: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery__bottom_collage {
+  position: absolute;
+  top: -66px;
+  left: 141px;
+  z-index: 0;
+  transition: 0.3s all;
+}
+
+.gallery__bottom_collage:hover {
+  transform: scale(1.1);
+  transition: 0.3s all;
+}
+
+.gallery__bottom_descr {
+  position: absolute;
+  width: 339px;
+  height: 96px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  right: 3px;
+  margin-top: -11px;
+}
+
+.gallery__bottom_btn {
+  background: white;
+  transform: translate(710px, 130px);
+}
+
+.picture {
+  position: relative;
+  width: 1440px;
+  height: 814px;
+
+  img {
+    transition: 0.3s;
+  }
+
+  img:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+}
+
+.picture__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  color: #080808;
+  /* margin-top: 346px; */
+  text-align: center;
+  /* display: inline-block; */
+  /* margin: auto; */
+  margin: 0px;
+  transform: translate(0px, 346px);
+}
+
+.picture_descr {
+  width: 390px;
+  height: 37px;
+  left: 525px;
+  top: 5652px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #080808;
+  opacity: 0.6;
+  margin: 0 auto;
+  margin-top: -42px;
+  text-align: center;
+  transform: translate(0px, 403px);
+}
+
+.picture__pic_1 {
+  position: absolute;
+  top: 0px;
+  left: 80px;
+}
+
+.picture__pic_2 {
+  position: absolute;
+  left: 0px;
+  top: 121px;
+}
+
+.picture__pic_3 {
+  position: absolute;
+  top: 501px;
+  left: 214px;
+}
+
+.picture__pic_4 {
+  position: absolute;
+  bottom: 0px;
+}
+
+.picture__pic_5 {
+  bottom: 0px;
+  position: absolute;
+  left: 709px;
+}
+
+.picture__pic_6 {
+  position: absolute;
+  right: 0px;
+  top: 364px;
+}
+
+.picture__pic_7 {
+  position: absolute;
+  right: 47px;
+  top: 2px;
+}
+
+.picture__pic_8 {
+  position: absolute;
+  top: 0px;
+  left: 709px;
 }
 
 @media screen and (max-width: 1439px) {

@@ -19,6 +19,32 @@ button {
   cursor: pointer;
 }
 
+// button:hover {
+//   transform: scale(1.2);
+//   transition: 0.3s;
+// }
+
+// button {
+//   transition: 0.3s;
+// }
+
+.common-btn {
+  transition: 0.3s all;
+}
+
+.common-btn:hover {
+  transition: 0.3s all;
+  font-size: 0.8em;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: 0.3s all;
+}
+a {
+  transition: 0.3s all;
+}
+
 // * {
 //   border: 1px red solid;
 // }
