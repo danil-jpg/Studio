@@ -155,3 +155,58 @@
     transform: translate(25px, 2px);
   }
 }
+
+@media screen and (max-width: 1439px) {
+  .footer {
+    background-image: url(../img/mainPage/FooterPic_laptop.webp);
+    height: 628px;
+  }
+
+  .footerHomePage {
+    margin-top: -23px;
+
+    .footer__content_block {
+      width: 709px;
+      margin-top: -43px;
+    }
+
+    .footer__content_block {
+      width: 709px;
+      margin-top: -20px;
+    }
+
+    .footer__cities {
+      margin-top: 26px;
+      width: 513px;
+    }
+
+    .footer__btn_req {
+      width: 183px;
+      margin-top: 55px;
+      height: 42px;
+    }
+
+    .footer__copyright {
+      transform: translate(-99px, 49px);
+    }
+
+    .footer__pic {
+      display: flex;
+      align-items: center;
+      transform: translate(593px, 4px);
+      width: 209px;
+
+      img {
+        transform: translate(29px, 1px);
+      }
+    }
+
+    .footer__info {
+      transform: translate(607px, -192px);
+    }
+
+    .footer__btn_wrapper {
+      transform: translate(24px, 130px);
+    }
+  }
+}

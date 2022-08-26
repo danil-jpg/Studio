@@ -822,6 +822,7 @@ body.mainPage {
   .gallery {
     margin-top: -172px;
     width: 1024px;
+    height: 2366px;
   }
 
   .gallery_content_wrapper {
@@ -915,5 +916,103 @@ body.mainPage {
 
   .phil__img-3 {
     right: 39px;
+  }
+
+  .picture {
+    width: 1024px;
+  }
+
+  .picture__title {
+    font-size: 56px;
+    line-height: 68px;
+    /* width: 427px; */
+    height: 69px;
+    /* left: 506px; */
+    /* top: 5565px; */
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 42px;
+  }
+  .picture__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+
+    font-size: 48px;
+    line-height: 45px;
+
+    color: #080808;
+    text-align: center;
+    margin: 0;
+    transform: translate(0, 346px);
+  }
+
+  .picture_descr {
+    transform: translate(0, 387px);
+  }
+
+  .picture__pic_1 {
+    left: -51px;
+    top: 62px;
+    height: 261px;
+  }
+
+  .picture__pic_2 {
+    height: 301px;
+    top: 166px;
+    left: -115px;
+  }
+
+  .picture__pic_3 {
+    top: 489px;
+    left: 6px;
+    height: 263px;
+  }
+
+  .picture__pic_4 {
+    display: none;
+  }
+
+  .picture__pic_5 {
+    left: 482px;
+    /* top: -10px; */
+    height: 197px;
+    width: 291px;
+    bottom: 23px;
+  }
+
+  .picture__pic_6 {
+    width: 100px;
+  }
+
+  .picture__pic_7 {
+    right: 35px;
+    top: 2px;
+  }
+
+  .picture__pic_8 {
+    top: 0;
+    left: 400px;
+    /* width: 402px; */
+    height: 233px;
+  }
+
+  // .picture {
+  //   img {
+  //     display: none;
+  //   }
+  //   picture {
+  //     display: none;
+  //   }
+  // }
+
+  .picute__wrapper {
+    .picture__pic_1 {
+      background-image: url("../img/mainPage/pic_section_1.webp");
+      width: 271px;
+      height: 180px;
+    }
   }
 }
