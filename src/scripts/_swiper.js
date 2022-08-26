@@ -17,7 +17,11 @@ function slider() {
     modules: [Navigation, Pagination],
 
     breakpoints: {
+      1440: {
+        slidesPerView: 1.175,
+      },
       1024: {
+        spaceBetween: 0,
         slidesPerView: 1.18,
       },
     },

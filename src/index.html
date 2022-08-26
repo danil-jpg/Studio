@@ -44,7 +44,7 @@
                             <img src="img/mainPage/arrow_bottom.webp" alt="arrow_bottom" class="arrow_bottom">
                         </button>
                         <a href="#" class="slide__tel common-font-11">+380983527547</a>
-                        <a href="#" class="slide__email common-font-11">info@gmail.com</a>
+                        <a href="#" class="slide__email common-font-11">E: info@gmail.com</a>
                     </div>
                     <div class="slide__ver-block">
                         <p class="slide__ver-block-title">Next Project</p>
@@ -73,7 +73,11 @@
             <section class="phil">
                 <div class="phil__descr_wrapper">
                     <h1 class="phil__title">Company Philosophy</h1>
-                    <p class="phil__descr phil__descr_1">The basic philosophy of our studio is to create individual, aesthetically stunning solutions for our customers by lightning-fast development of projects employing unique styles and architecture. Even if you don't have a ready sketch of what you want - we will help you get the result.</p>
+                    <p class="phil__descr phil__descr_1">
+                        The basic philosophy of our studio is to create individual, aesthetically stunning solutions for our customers by
+                        <br class="visible_1024">
+                        lightning-fast development of projects employing unique styles and architecture. Even if you don't have a ready sketch of what you want - we will help you get the result.
+                    </p>
                     <p class="phil__descr phil__descr_2">We can also help you create harmony out of seemingly completely incompatible elements in the interior or the exterior design. Do you want to combine classics and abstract art? Modern and retro? Love everything associated with the 1940's? No problem!</p>
                 </div>
                 @@include("./html/discoverBtn.html",{
@@ -82,7 +86,10 @@
                     "hor_lines_color" : "phil__hor_line",
                     "title" : "Discover more"
                 });
-                <img src="img/mainPage/table_1.webp" alt="table_1" class="phil__img-1">
+                <picture class="phil__img-1">
+                    <source srcset="img/mainPage/table_1-mobile.webp" media="(max-width: 1025px)">
+                    <img src="img/mainPage/table_1.webp" alt="table_1" class="phil__img-1">
+                </picture>
                 <img src="img/mainPage/Bedroom_1.webp" alt="Bedroom_1" class="phil__img-2">
                 <img src="img/mainPage/sofas_1.webp" alt="sofas_1" class="phil__img-3">
                 <p class="phil__quote">“</p>
@@ -147,7 +154,7 @@
                     })
                 </div>
             </section>
-            <section class="picture">
+            <!-- <section class="picture">
                 <h3 class="picture__title">@lorem.ipsum</h3>
                 <p class="picture_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere.</p>
                 <img src="img/mainPage/pic_section_1.webp" alt="pic" class="picture__pic picture__pic_1">
@@ -158,12 +165,12 @@
                 <img src="img/mainPage/pic_section_6.webp" alt="pic" class="picture__pic picture__pic_6">
                 <img src="img/mainPage/pic_section_7.webp" alt="pic" class="picture__pic picture__pic_7">
                 <img src="img/mainPage/pic_section_8.webp" alt="pic" class="picture__pic picture__pic_8">
-            </section>
+            </section> -->
         </main>
-        @@include("./html/footer.html",{
+        <!-- @@include("./html/footer.html",{
             "footer-class" : "footerHomePage",
 
-        })
+        }) -->
         <script src="scripts/main.js"></script>
     </body>
 </html>
