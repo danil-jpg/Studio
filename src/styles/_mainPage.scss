@@ -1282,3 +1282,24 @@ body.mainPage {
     margin-top: 0px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .slide {
+    .slide__content {
+      width: 100%;
+    }
+  }
+
+  .slide__ver-block {
+    left: 0;
+  }
+
+  .slide__pagination {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+
+  .slide__bottom {
+    width: 515px;
+  }
+}
