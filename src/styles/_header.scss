@@ -137,15 +137,15 @@
 
 @media screen and (max-width: 1023px) {
   .header {
-    width: 768px;
+    width: 672px;
   }
 
   .header__logo {
-    transform: translate(-13px, -5px);
+    transform: translate(-0px, -5px);
   }
 
   .laptop__burger {
-    transform: translate(-18px, -1px);
+    transform: translate(-4px, -1px);
 
     .laptop__title {
       transform: translate(-2px, 0px);
@@ -153,7 +153,7 @@
   }
 
   .header__language {
-    margin-left: 185px;
+    margin-left: 199px;
     margin-top: 15px;
   }
 
@@ -163,7 +163,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
     width: 375px;
     top: 11px;

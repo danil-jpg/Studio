@@ -6,7 +6,7 @@ import cleanCss from "gulp-clean-css";
 import rename from "gulp-rename";
 import babel from "gulp-babel";
 import uglify from "gulp-uglify";
-import sourcemaps from "gulp-sourcemaps";
+// import sourcemaps from "gulp-sourcemaps";
 import autoPrefixer from "gulp-autoprefixer";
 import imagein from "gulp-imagemin";
 import htmlmin from "gulp-htmlmin";
@@ -17,6 +17,7 @@ import webpack from "webpack-stream";
 import fileinclude from "gulp-file-include";
 import webp from "gulp-webp";
 import gcmq from "gulp-group-css-media-queries";
+import sourcemaps from "gulp-sourcemaps";
 const browserSync = name.create();
 const sass = gulpSass(dartSass);
 
@@ -108,27 +109,30 @@ function componentsHtml() {
 }
 
 function styles() {
-  return gulp
-    .src(paths.styles.src)
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(
-      autoPrefixer({
-        cascade: false,
-      })
-    )
-    .pipe(gcmq())
-    .pipe(cleanCss({ level: 2 }))
-    .pipe(
-      rename({
-        basename: "main",
-        suffix: ".min",
-      })
-    )
-    .pipe(sourcemaps.write())
-    .pipe(gulpSize({ showFiles: true }))
-    .pipe(gulp.dest(paths.styles.dest))
-    .pipe(browserSync.stream());
+  return (
+    gulp
+      .src(paths.styles.src)
+      .pipe(sourcemaps.init())
+      // .pipe(sourcemaps.init())
+      .pipe(sass())
+      .pipe(
+        autoPrefixer({
+          cascade: false,
+        })
+      )
+      // .pipe(gcmq())
+      .pipe(cleanCss({ level: 2 }))
+      .pipe(
+        rename({
+          basename: "main",
+          suffix: ".min",
+        })
+      )
+      .pipe(sourcemaps.write())
+      .pipe(gulpSize({ showFiles: true }))
+      .pipe(gulp.dest(paths.styles.dest))
+      .pipe(browserSync.stream())
+  );
 }
 
 function scripts() {

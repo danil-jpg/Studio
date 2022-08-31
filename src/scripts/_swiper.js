@@ -22,7 +22,10 @@ function slider() {
       },
       1024: {
         spaceBetween: 0,
-        slidesPerView: 1.18,
+        slidesPerView: 1.189,
+      },
+      768: {
+        slidesPerView: 1.17,
       },
     },
   });
