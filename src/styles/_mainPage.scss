@@ -304,6 +304,10 @@ body.mainPage {
   position: relative;
 }
 
+.visible_1024_not_768 {
+  display: none;
+}
+
 .phil__button {
   margin: 0 auto;
 
@@ -833,6 +837,10 @@ body.mainPage {
     display: block;
   }
 
+  .visible_1024_not_768 {
+    display: block;
+  }
+
   .phil__descr_wrapper {
     margin-left: 158px;
     margin-top: 155px;
@@ -1281,57 +1289,54 @@ body.mainPage {
   .footerHomePage {
     margin-top: 0px;
   }
-  .footer__btn_req{
+  .footer__btn_req {
     padding-top: 4px;
     padding-left: 7px;
   }
-  .swiper{
+  .swiper {
     height: 710px;
-    .swiwer-wrapper{
+    .swiwer-wrapper {
       height: 100%;
     }
-    .first-slide{
+    .first-slide {
       height: 100%;
       background-repeat: no-repeat;
       background-size: contain;
       background-image: url(../img/mainPage/firstSlide_laptop.webp);
     }
-    .second-slide{
+    .second-slide {
       height: 965px;
       background-repeat: no-repeat;
       background-size: 133% 74%;
       background-position: -19px -4px;
       background-image: url(../img/mainPage/secondSlide.webp);
-
     }
   }
-
 }
-@media screen and (max-width:1439px) and (min-width:1025px) {
-  .swiper{
-    .first-slide{
+@media screen and (max-width: 1439px) and (min-width: 1025px) {
+  .swiper {
+    .first-slide {
       background-size: cover;
     }
   }
 }
 @media screen and (max-width: 1023px) {
-  .swiper{
+  .swiper {
     height: 959px;
-    .swiwer-wrapper{
+    .swiwer-wrapper {
       height: 100%;
     }
-    .first-slide{
+    .first-slide {
       height: 100%;
       background-repeat: no-repeat;
       background-size: contain;
-      background-image: url(../img/mainPage/firstSlide_laptop.webp);
+      background-image: url(../img/mainPage/firstSlide_tablet.webp);
     }
-    .second-slide{
+    .second-slide {
       height: 965px;
       background-repeat: no-repeat;
       background-size: 112% 100%;
       background-position: -6px -4px;
-
     }
   }
   .slide {
@@ -1347,57 +1352,256 @@ body.mainPage {
   .slide__pagination {
     margin-left: 0px;
     margin-right: 0;
-
   }
 
   .slide__bottom {
     width: 515px;
   }
 
-  .slider__title{
+  .slider__title {
     font-size: 44px;
     line-height: 54px;
     margin-top: 381px;
     margin-left: 125px;
     width: 261px;
   }
-  .slide{
-    .button-with-lines_mainPage{
-      transform: translate(-34px,4px);
+  .slide {
+    .button-with-lines_mainPage {
+      transform: translate(-34px, 4px);
     }
   }
 
-
-  .slide__pagination{
+  .slide__pagination {
     margin-left: 400px;
   }
 
-  .slide__bottom{
+  .slide__bottom {
     margin-top: 309px;
     margin-left: -6px;
     width: 515px;
 
-    .slide__berlin{
-      transform: translate(61px,3px);
+    .slide__berlin {
+      transform: translate(61px, 3px);
     }
 
-    .slide__tel{
-      transform: translate(95px,11px);
+    .slide__tel {
+      transform: translate(95px, 11px);
     }
 
-    .slide__email{
-      transform: translate(126px,11px);
+    .slide__email {
+      transform: translate(126px, 11px);
     }
   }
 
-  .slide__ver-block{
+  .slide__ver-block {
     left: 97px;
     top: -673px;
   }
 
-  .slide__ver-block-text{
+  .slide__ver-block-text {
     width: 400px;
     letter-spacing: 0.05em;
     font-size: 2em;
+  }
+  .phil {
+    width: 100vw;
+  }
+
+  .phil__descr_wrapper {
+    margin-left: 125px;
+    margin-top: 75px;
+
+    .phil__descr {
+      width: 540px;
+    }
+
+    .phil__descr_2 {
+      width: 516px;
+    }
+  }
+
+  .phil__img-1 {
+    display: none;
+  }
+
+  .phil__side_text {
+    top: 116px;
+    left: 24px;
+  }
+
+  .visible_1024_not_768 {
+    display: none;
+  }
+
+  .phil__button {
+    transform: translate(-156px, 20px);
+  }
+
+  .phil__img-2 {
+    width: 383px;
+    height: 235px;
+    left: 258px;
+    bottom: -82px;
+  }
+
+  .phil__img-3 {
+    width: 153px;
+    height: 191px;
+    right: 267px;
+    top: 180px;
+  }
+  .phil__quote {
+    margin-left: 325px;
+    margin-top: 198px;
+  }
+  .phil__text-bottom {
+    margin-left: 354px;
+    margin-top: -60px;
+    width: 291px;
+  }
+
+  .gallery {
+    margin-top: -233px;
+    width: 100vw;
+  }
+  .laptop__burger {
+    transform: translate(-5px, -1px);
+  }
+
+  .header__language {
+    margin-left: 198px;
+  }
+
+  .slider__title {
+    margin-top: 381px;
+    margin-left: 124px;
+  }
+
+  .slide {
+    .button-with-lines_mainPage {
+      transform: translate(-35px, 4px);
+    }
+  }
+  .slide__pagination {
+    margin-left: 399px;
+    margin-top: -20px;
+  }
+
+  .slide__ver-block {
+    left: 96px;
+  }
+
+  .slide__bottom {
+    margin-top: 305px;
+    margin-left: -7px;
+  }
+
+  .phil__descr_wrapper {
+    margin-left: 124px;
+  }
+
+  .gallery {
+    height: 4288px;
+  }
+
+  .gallery_content_wrapper {
+    width: 100vw;
+    margin-top: 120px;
+  }
+
+  .gallery__side_text_bottom {
+    transform: translate(22px, -304px);
+
+    .gallery__bottom_line {
+      margin-left: 1px;
+      margin-top: 64px;
+    }
+  }
+
+  .gallery__imgs_template {
+    grid-template-columns: 1fr;
+    grid-template-rows: 672px;
+    margin-top: -101px;
+
+    img {
+      width: 672px;
+      height: 672px;
+    }
+  }
+  .gallery__imgs_template {
+    display: block;
+    width: 672px;
+  }
+  .gallery__imgs_wrapper {
+    margin-bottom: 3px;
+  }
+
+  .gallery__imgs_top-text {
+    width: 159px;
+  }
+
+  .gallery__imgs_texts_1 {
+    .gallery__imgs_bottom-text {
+      margin-top: 244.5%;
+      width: 186px;
+    }
+
+    .button-with-lines_gallery_text {
+      margin-top: 20px;
+
+      transform: translate(-1px, 0px);
+    }
+  }
+
+  .gallery__imgs_texts_2 {
+    padding-top: 12px;
+
+    .gallery__imgs_bottom-text {
+      margin-top: 223.5%;
+      transform: translate(0px);
+    }
+
+    .button-with-lines_gallery_text {
+      transform: translate(-1px, 1px);
+    }
+  }
+
+  .gallery__imgs_texts_3 {
+    .gallery__imgs_bottom-text {
+      margin-top: 208%;
+    }
+
+    .button-with-lines_gallery_text {
+      transform: translate(-2px, 1px);
+    }
+  }
+
+  .gallery__imgs_texts_4 {
+    padding-left: 32px;
+    padding-top: 19px;
+
+    .gallery__imgs_bottom-text {
+      margin-top: 254%;
+    }
+
+    .button-with-lines_gallery_text {
+      transform: translate(-1px);
+    }
+  }
+
+  .gallery__imgs_texts_5 {
+  }
+
+  .gallery__bottom_text {
+    margin: 118px auto 0;
+    transform: translate(-2px, 0);
+  }
+
+  .gallery__bottom_descr {
+    transform: translate(1px);
+  }
+
+  .gallery__bottom_btn {
+    transform: translate(137px, 146px);
   }
 }
