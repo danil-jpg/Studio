@@ -210,3 +210,54 @@
     }
   }
 }
+@media screen and (max-width: 1023px) {
+  .footer {
+    background-image: url(../img/mainPage/footerPicTablet.webp);
+    height: 574px;
+  }
+  .footerHomePage {
+    .footer__content_block {
+      width: 519px;
+    }
+
+    .footer__title {
+      font-size: 2em;
+      margin-top: 108px;
+    }
+
+    .footer__cities {
+      margin-top: 18px;
+      width: 502px;
+    }
+
+    .footer__btn_req {
+      width: 183px;
+      margin-top: 47px;
+      height: 42px;
+    }
+
+    .slide__language {
+      margin-top: 7px;
+    }
+
+    .footer__pic {
+      transform: translate(378px, -1px);
+
+      img {
+        transform: translate(30px, 1px);
+      }
+    }
+
+    .footer__copyright {
+      transform: translate(-77px, 44px);
+    }
+
+    .footer__info {
+      transform: translate(366px, -36px);
+    }
+
+    .footer__btn_wrapper {
+      transform: translate(16px, 114px);
+    }
+  }
+}

@@ -147,7 +147,7 @@ body.mainPage {
   }
 
   .slide__berlin {
-    font-size: 16px;
+    font-size: 1em;
 
     transform: translate(120px, 3px);
     width: 117px;
@@ -721,6 +721,8 @@ body.mainPage {
   .slider__title {
     font-size: 48px;
     line-height: 59px;
+    @include fs(48);
+    @include lh(59, 48);
     margin-left: 160px;
     width: 425px;
     margin-top: 284px;
@@ -813,7 +815,7 @@ body.mainPage {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
-      font-size: 32px;
+      font-size: 2em;
       line-height: 39px;
       color: #080808;
     }
@@ -829,6 +831,8 @@ body.mainPage {
       font-weight: 300;
       font-size: 14px;
       line-height: 24px;
+      @include fs(14);
+      @include lh(24, 14);
       color: #080808;
       opacity: 0.7;
     }
@@ -846,12 +850,13 @@ body.mainPage {
     margin-top: 155px;
 
     .phil__title {
-      font-size: 32px;
+      font-size: 2em;
       line-height: 39px;
     }
 
     .phil__descr {
       font-size: 14px;
+      @include fs(14);
       line-height: 24px;
     }
 
@@ -884,7 +889,9 @@ body.mainPage {
 
   .phil__quote {
     font-size: 25.575px;
-    line-height: 31px;
+    @include fs(25);
+    @include lh(31, 25);
+    // line-height: 31px;
     margin-left: 525px;
     margin-top: 27px;
   }
@@ -897,7 +904,7 @@ body.mainPage {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 170.66%;
     margin-left: 556px;
     margin-top: -59px;
@@ -944,7 +951,7 @@ body.mainPage {
   }
 
   .gallery__title {
-    font-size: 32px;
+    font-size: 2em;
     line-height: 39px;
     width: 210px;
     margin-top: -16px;
@@ -1048,6 +1055,8 @@ body.mainPage {
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
+    @include fs(48);
+    @include lh(42, 48);
     line-height: 42px;
   }
   .picture__title {
@@ -1056,8 +1065,9 @@ body.mainPage {
     font-weight: 700;
 
     font-size: 48px;
+    @include fs(48);
     line-height: 45px;
-
+    @include lh(45, 48);
     color: #080808;
     text-align: center;
     margin: 0;
@@ -1150,6 +1160,7 @@ body.mainPage {
     font-style: normal;
     font-weight: 500;
     font-size: 11px;
+    @include fs(11);
     line-height: 170%;
     color: #ffffff;
     width: 173px;
@@ -1161,6 +1172,7 @@ body.mainPage {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+    @include fs(20);
     line-height: 126%;
     color: #fafafa;
     margin-top: 129%;
@@ -1360,6 +1372,7 @@ body.mainPage {
 
   .slider__title {
     font-size: 44px;
+    @include fs(44);
     line-height: 54px;
     margin-top: 381px;
     margin-left: 125px;
@@ -1603,5 +1616,68 @@ body.mainPage {
 
   .gallery__bottom_btn {
     transform: translate(137px, 146px);
+  }
+
+  .picture {
+    width: 100vw;
+    height: 831px;
+  }
+
+  .picture__title {
+    @include fs(44);
+    transform: translate(0, 363px);
+  }
+
+  .picture_descr {
+    transform: translate(0, 405px);
+  }
+
+  .picture__pic_1 {
+    width: 194px;
+    height: 129px;
+    left: 40px;
+    top: 110px;
+  }
+
+  .picture__pic_2 {
+    width: 249px;
+    height: 166px;
+    top: 200px;
+    left: -64px;
+  }
+  .picture__pic_3 {
+  }
+  .picture__pic_4 {
+    width: 224.73px;
+    height: 149.03px;
+    top: 618px;
+    left: 45px;
+  }
+  .picture__pic_5 {
+    left: 439px;
+    top: 740px;
+    width: 168.75px;
+    height: 111.97px;
+  }
+  .picture__pic_6 {
+    display: block;
+    background-image: url(../img/mainPage/Pic_test_5.webp);
+    top: 481px;
+    left: 702px;
+    width: 316.99px;
+    height: 222.37px;
+  }
+  .picture__pic_7 {
+    width: 213.69px;
+    height: 141.94px;
+    left: 628.19px;
+    top: 133px;
+  }
+  .picture__pic_8 {
+    background-image: url(../img/mainPage/Pic_8_test.webp);
+    width: 274.41px;
+    height: 182.15px;
+    left: 403.45px;
+    top: -30px;
   }
 }
