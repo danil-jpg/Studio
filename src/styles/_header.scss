@@ -161,20 +161,31 @@
     margin-top: -3px;
     margin-left: 56px;
   }
+
+  .laptop__burger {
+    transform: translate(-5px, -1px);
+  }
+
+  .header__language {
+    margin-left: 198px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .header {
-    width: 375px;
+    width: 312px;
     top: 11px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .header__logo {
-    transform: translate(-38px, -5px);
+    transform: translate(-8px, -4px);
   }
 
   .laptop__burger {
-    transform: translate(202px, 1px);
+    transform: translate(233px, 1px);
+    width: 0;
     margin-left: 0px;
   }
 
@@ -185,6 +196,7 @@
 
   .header__language {
     margin-left: 48px;
+    margin-left: 163px;
   }
 
   .common-header-btn {

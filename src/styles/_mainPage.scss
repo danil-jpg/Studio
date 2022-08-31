@@ -1477,13 +1477,13 @@ body.mainPage {
     margin-top: -233px;
     width: 100vw;
   }
-  .laptop__burger {
-    transform: translate(-5px, -1px);
-  }
+  // .laptop__burger {
+  //   transform: translate(-5px, -1px);
+  // }
 
-  .header__language {
-    margin-left: 198px;
-  }
+  // .header__language {
+  //   margin-left: 198px;
+  // }
 
   .slider__title {
     margin-top: 381px;
@@ -1679,5 +1679,112 @@ body.mainPage {
     height: 182.15px;
     left: 403.45px;
     top: -30px;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 376px) {
+  .swiper {
+    .first-slide {
+      background-size: cover;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .swiper {
+    .first-slide {
+      background-image: url(../img/mainPage/firstSlide_mobile.webp);
+      width: 316px;
+      height: 542px;
+    }
+
+    .second-slide {
+      height: 542px;
+      background-size: 139% 100%;
+      background-position: -6px -2px;
+    }
+  }
+
+  .slider__title {
+    font-size: 40px;
+    line-height: 39px;
+    margin-top: 220px;
+    margin-left: 24px;
+  }
+  .slide {
+    .button-with-lines_mainPage {
+      transform: translate(-135px, 15px);
+    }
+  }
+
+  .slide__pagination {
+    margin-left: 24px;
+    margin-top: -240px;
+    .line {
+      width: 88px;
+    }
+  }
+
+  .slide__bottom {
+    padding-left: 70px;
+    width: 100vw;
+
+    .slide__language {
+      display: none;
+    }
+    .slide__berlin {
+      transform: translate(-63px, 26px);
+    }
+
+    .slide__tel {
+      transform: translate(-6px, 23px);
+    }
+
+    .slide__email {
+      transform: translate(-107px, 41px);
+    }
+  }
+
+  .slide__ver-block {
+    .slide__ver-block-title {
+      display: none;
+    }
+
+    .slide__ver-block-text {
+      transform: translate(-440px, 04px);
+    }
+  }
+
+  .slide__bottom {
+    width: 338px;
+    margin: 0 auto;
+    margin-top: 305px;
+    padding-left: 0;
+
+    .slide__berlin {
+      transform: translate(1px, 26px);
+    }
+
+    .slide__tel {
+      transform: translate(57px, 24px);
+    }
+
+    .slide__email {
+      transform: translate(-43px, 41px);
+    }
+  }
+  .slide__ver-block {
+    .slide__ver-block-text {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      @include fs(18);
+      transform: translate(-484px, 63px);
+      line-height: 1em;
+      letter-spacing: 0.04em;
+      -webkit-text-fill-color: none;
+      -webkit-text-fill-color: currentColor;
+      -webkit-text-stroke: black;
+    }
   }
 }

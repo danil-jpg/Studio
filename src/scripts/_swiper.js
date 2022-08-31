@@ -27,6 +27,9 @@ function slider() {
       768: {
         slidesPerView: 1.17,
       },
+      375: {
+        slidesPerView: 1.19,
+      },
     },
   });
 }
