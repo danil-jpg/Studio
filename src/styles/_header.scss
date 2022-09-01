@@ -3,6 +3,19 @@
 // }
 
 .laptop__burger {
+  transition: 0.3s;
+  display: none;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+.laptop__icon_close {
   display: none;
 }
 .common-font-11 {
@@ -81,6 +94,12 @@
 }
 
 @media screen and (max-width: 1439px) {
+  .laptop__icon_close {
+    display: block;
+    position: absolute;
+    transition: 0.3s;
+    visibility: hidden;
+  }
   .header {
     width: 1024px;
     padding-left: 0px;
@@ -92,9 +111,9 @@
     transform: translate(2px, -1px);
   }
 
-  .header__list {
-    display: none;
-  }
+  // .header__list {
+  //   display: none;
+  // }
 
   .laptop__burger {
     display: flex;
@@ -118,6 +137,25 @@
     }
   }
 
+  .header {
+    z-index: 101;
+  }
+  .black_background {
+    transition: 0.3s;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    z-index: 100;
+  }
+  .black_background.active {
+    opacity: 1;
+  }
+
   .header__language {
     color: #fff;
 
@@ -132,6 +170,37 @@
   .common-header-btn {
     margin-top: 0px;
     margin-left: 57px;
+  }
+
+  .burger-active {
+    transform: translate(18px, 162px) !important;
+    transition: 0.5s;
+  }
+
+  .header__list {
+    transition: 0.5s;
+    flex-direction: column;
+    position: absolute;
+    height: 331px;
+    width: 232px;
+    transform: translate(18px, -1200px);
+  }
+
+  .header__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+
+    @include lh(39, 32);
+    color: #848484;
+    letter-spacing: 0;
+  }
+
+  .header__link {
+    a:hover {
+      color: #fff;
+    }
   }
 }
 
