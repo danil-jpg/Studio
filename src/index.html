@@ -70,7 +70,7 @@
                 </div>
                 <!-- </div> -->
             </section>
-            <!-- <section class="phil">
+            <section class="phil">
                 <div class="phil__descr_wrapper">
                     <h1 class="phil__title">Company Philosophy</h1>
                     <p class="phil__descr phil__descr_1">
@@ -104,8 +104,8 @@
                     "title" : "Ceo company",
                     "line_margin" : "phil__bottom_line"
                 })
-            </section> -->
-            <!-- <section class="gallery">
+            </section>
+            <section class="gallery">
                 <div class="gallery_content_wrapper">
                     <h2 class="gallery__title">Our Projects</h2>
                     <p class="gallery__descr">
@@ -146,6 +146,7 @@
                     </div>
                     <div class="gallery__imgs_wrapper pic_2">
                         <picture>
+                            <source srcset="img/mainPage/Pic_gallery_2_mobile.webp" media="(max-width:767px)">
                             <source srcset="img/mainPage/Pic_2_laptop.webp" media="(max-width:1439px)">
                             <img src="img/mainPage/Pic_2.webp" alt="Pic_2" class="img_2">
                         </picture>
@@ -170,7 +171,10 @@
                         </div>
                     </div>
                     <div class="gallery__imgs_wrapper pic_3">
-                        <img src="img/mainPage/Pic_3.webp" alt="Pic_2" class="img_3">
+                        <picture>
+                            <source srcset="img/mainPage/Pic_2_laptop.webp" media="(max-width:767px)">
+                            <img src="img/mainPage/Pic_3.webp" alt="Pic_2" class="img_3">
+                        </picture>
                         <div class="gallery__imgs_texts gallery__imgs_texts_3">
                             <div class="gallery__imgs_top-text">
                                 <p class="word-1">
@@ -213,8 +217,31 @@
                             })
                         </div>
                     </div>
+                    <div class=" gallery__imgs_wrapper gallery__img_spec_mobile">
+                        <img src="img/mainPage/Pic_4_change.webp" alt="pic" class="img_5_spec">
+                        <div class="gallery__imgs_texts gallery__imgs_texts_5_spec">
+                            <div class="gallery__imgs_top-text">
+                                <p class="word-1">
+                                    Lodz
+                                </p>
+                                <p class="word-2">
+                                    16.10.2018
+                                </p>
+                                <p class="word-3">
+                                    80 sq.m
+                                </p>
+                            </div>
+                            <div class="gallery__imgs_bottom-text">House on a Hillside</div>
+                            @@include("./html/discoverBtn.html", {
+                                "class" : "button-with-lines_gallery_text ",
+                                "btn-class" : "",
+                                "title" : "Discover more"
+                            })
+                        </div>
+                    </div>
                     <div class="gallery__imgs_wrapper pic_5">
                         <picture>
+                            <source srcset="img/mainPage/Pic_6_mobile.webp" media="(max-width:767px)" class="source_img_5">
                             <source srcset="img/mainPage/Pic_5_laptop.webp" media="(max-width:1439px)" class="source_img_5">
                             <img src="img/mainPage/Pic_5.webp" alt="Pic_1" class="img_5">
                         </picture>
@@ -235,8 +262,8 @@
                         "title" : "Make request"
                     })
                 </div>
-            </section> -->
-            <!-- <section class="picture">
+            </section>
+            <section class="picture">
                 <h3 class="picture__title">@lorem.ipsum</h3>
                 <p class="picture_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere.</p>
                 <div class="picture__pic_1"></div>
@@ -247,12 +274,12 @@
                 <div class="picture__pic_6"></div>
                 <div class="picture__pic_7"></div>
                 <div class="picture__pic_8"></div>
-            </section> -->
+            </section>
         </main>
-        <!-- @@include("./html/footer.html",{
+        @@include("./html/footer.html",{
             "footer-class" : "footerHomePage",
 
-        }) -->
+        })
         <script src="scripts/main.js"></script>
     </body>
 </html>
