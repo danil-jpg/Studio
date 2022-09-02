@@ -301,7 +301,7 @@ body.mainPage {
 }
 
 .phil__img-3 {
-  right: 94px;
+  right: 87px;
   top: 301px;
   position: relative;
 }
@@ -373,11 +373,11 @@ body.mainPage {
 .phil__img-2 {
   z-index: 2;
   bottom: 44px;
-  left: 431px;
+  left: 433px;
   position: relative;
 }
 .phil__img-3 {
-  right: 90px;
+  right: 86px;
   top: 301px;
   position: relative;
 }
@@ -613,7 +613,7 @@ body.mainPage {
 
 .gallery__bottom_btn {
   background: white;
-  transform: translate(710px, 130px);
+  transform: translate(710px, 128px);
 }
 
 .picture {
@@ -1334,6 +1334,11 @@ body.mainPage {
       background-image: url(../img/mainPage/secondSlide.webp);
     }
   }
+
+  .pic_4,
+  .pic_5 {
+    transform: translate(0, -3px);
+  }
 }
 @media screen and (max-width: 1439px) and (min-width: 1025px) {
   .swiper {
@@ -1689,6 +1694,28 @@ body.mainPage {
     height: 182.15px;
     left: 403.45px;
     top: -30px;
+  }
+
+  .phil__img-2 {
+    left: 261px;
+  }
+
+  .phil__img-3 {
+    right: 264px;
+  }
+  .gallery__bottom_text {
+    margin: 118px auto 0;
+    transform: translate(0px, 0);
+    line-height: 135.4%;
+  }
+  .gallery__bottom_descr {
+    transform: translate(1px, -4px);
+  }
+  .gallery__bottom_btn {
+    transform: translate(137px, 143px);
+  }
+  .gallery__bottom .gallery__bottom_side_text_bottom {
+    transform: translate(-147px, 37px);
   }
 }
 
@@ -2184,6 +2211,17 @@ body.mainPage {
     position: relative;
     z-index: 2;
     transform: translate(1px, 314px);
+  }
+  .phil__side_text {
+    display: none;
+    top: 116px;
+    left: 24px;
+  }
+  .phil__img-2 {
+    left: 87px;
+  }
+  .img_5 {
+    transform: translate(0, 3px);
   }
 }
 

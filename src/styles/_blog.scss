@@ -306,3 +306,12 @@ html {
   //     transform: translate(1166px, 91px);
   //   }
 }
+
+@media screen and (min-width: 1440px) {
+  .blog-footer {
+    background-size: cover;
+  }
+  .gallery {
+    width: 100%;
+  }
+}
