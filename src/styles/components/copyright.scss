@@ -1,0 +1,16 @@
+.copyright-wrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 133px;
+  width: 1312px;
+
+  .footer__pic {
+    transform: none;
+    width: 210px;
+  }
+
+  .footer__copyright {
+    transform: none;
+  }
+}
