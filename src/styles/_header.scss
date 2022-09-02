@@ -1,7 +1,9 @@
 // @mixin fs($fs) {
 //   font-size: calc($fs / 16 * 1em);
 // }
-
+.common-header-btn_mobile {
+  display: none;
+}
 .laptop__burger {
   transition: 0.3s;
   display: none;
@@ -93,12 +95,30 @@
   margin-left: 83px;
 }
 
+.slide__bottom_header {
+  display: none !important;
+}
+
 @media screen and (max-width: 1439px) {
-  .laptop__icon_close {
-    display: block;
+  .slide__bottom_header.header_active {
+    animation: 5s show ease;
+    display: flex !important;
     position: absolute;
+    top: 472px;
+    margin-left: -305px;
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .laptop__icon_close {
     transition: 0.3s;
-    visibility: hidden;
+    display: none;
   }
   .header {
     width: 1024px;
@@ -205,6 +225,20 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .header__list.burger-active {
+    transform: translate(0px, 307px) !important;
+  }
+
+  .header__list {
+    height: 364px;
+
+    transform: translate(0px, -1200px);
+  }
+
+  .slide__bottom_header {
+    top: 630px !important;
+    margin-left: -54px !important;
+  }
   .header {
     width: 672px;
   }
@@ -241,6 +275,39 @@
 }
 
 @media screen and (max-width: 767px) {
+  .laptop__burger {
+    .laptop__icon_close {
+      transform: translate(-6px, 2px);
+    }
+  }
+  .header__list.burger-active {
+    height: 341px;
+    width: 175px;
+    align-items: center;
+
+    left: 50%;
+    transform: translate(-50%, 124px) !important;
+    margin-left: 0px;
+    padding-left: 0px;
+
+    .header__link {
+      @include fs(26);
+
+      @include lh(32, 26);
+    }
+
+    button:hover {
+    }
+
+    .common-header-btn_mobile {
+      color: $textColor1;
+      font-size: 11px;
+      display: block;
+      @include lh(13, 11);
+      transform: translate(0, 20px);
+    }
+  }
+
   .header {
     width: 312px;
     top: 11px;
@@ -270,5 +337,17 @@
 
   .common-header-btn {
     display: none;
+  }
+
+  .slide__bottom_header.slide__bottom {
+    margin: -47px auto 0;
+    margin-left: -14px !important;
+
+    .slide__tel {
+      transform: translate(117px, 23px);
+    }
+    .slide__email {
+      transform: translate(3px, 40px);
+    }
   }
 }

@@ -21,6 +21,13 @@
         <li class="header__link  common-font-11">
             <a href="#">Contacts</a>
         </li>
+        <li class="header__link  visible_576">
+            @@include("commonBtn.html", {
+                "class1" : "common-header-btn_mobile",
+                "class2" : " ",
+                "title" : "Send Request"
+            })
+        </li>
     </ul>
     <a href="#" class="header__language common-font-11">
         En
@@ -30,6 +37,20 @@
         "class2" : " ",
 		"title" : "Send Request"
 	})
+    <div class="slide__bottom slide__bottom_header">
+        <div class="slide__language">
+            <p class="slide__lang common-font-11">Fb</p>
+            <p class="slide__lang common-font-11">In</p>
+            <p class="slide__lang common-font-11">Be</p>
+        </div>
+        <button class="slide__berlin">
+            <img src="img/mainPage/point.webp" alt="point" class="point">
+            <span class="common-font-11 Berlin">Berlin</span>
+            <img src="img/mainPage/arrow_bottom.webp" alt="arrow_bottom" class="arrow_bottom">
+        </button>
+        <a href="#" class="slide__tel common-font-11">+380983527547</a>
+        <a href="#" class="slide__email common-font-11">E: info@gmail.com</a>
+    </div>
     <style></style>
 </header>
 <section class="black_background"></section>

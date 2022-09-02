@@ -9,20 +9,23 @@ window.addEventListener("DOMContentLoaded", () => {
     const burgerTrigger = document.querySelector(".laptop__icon"),
       burgerTriggerClose = document.querySelector(".laptop__icon_close"),
       headerlist = document.querySelector(".header__list"),
+      headerBottomBlock = document.querySelector(".slide__bottom_header"),
       background = document.querySelector(".black_background");
 
     burgerTrigger.addEventListener("click", () => {
       headerlist.classList.toggle("burger-active");
       background.classList.toggle("active");
-      burgerTriggerClose.classList.toggle("visible");
-      burgerTrigger.classList.toggle("hidden");
+      burgerTriggerClose.style.display = "block";
+      burgerTrigger.style.display = "none";
+      headerBottomBlock.classList.toggle("header_active");
     });
 
     burgerTriggerClose.addEventListener("click", () => {
-      burgerTriggerClose.classList.toggle("visible");
       headerlist.classList.toggle("burger-active");
       background.classList.toggle("active");
-      burgerTrigger.classList.toggle("hidden");
+      burgerTriggerClose.style.display = "none";
+      burgerTrigger.style.display = "block";
+      headerBottomBlock.classList.toggle("header_active");
     });
 
     window.addEventListener("resize", () => {
