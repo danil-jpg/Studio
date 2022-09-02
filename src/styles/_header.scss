@@ -9,6 +9,10 @@
   display: none;
 }
 
+.header__link_btn {
+  display: none !important;
+}
+
 .hidden {
   visibility: hidden !important;
 }
@@ -349,5 +353,18 @@
     .slide__email {
       transform: translate(3px, 40px);
     }
+  }
+
+  .header__link_btn {
+    display: initial;
+  }
+}
+
+.blog-page {
+  .common-font-11 {
+    color: $textColor2;
+  }
+  .header__logo {
+    color: $textColor2;
   }
 }

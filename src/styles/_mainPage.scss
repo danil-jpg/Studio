@@ -1,7 +1,9 @@
 body.mainPage {
   position: relative;
 }
-
+.gallery__img_spec_mobile {
+  display: none !important;
+}
 .visible_1024 {
   display: none;
 }

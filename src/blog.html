@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles/main.min.css">
+    </head>
+    <body class="blog">
+        @@include("./html/header.html", {
+			"class" : "main-page",
+			"class2" : "blog-page"
+		  })
+        <main>
+            <section class="blog-gallery">
+                <div class="blog-gallery_top-wrapper">
+                    <p class="blog-gallery_title">Our latest news</p>
+                    <ul class="blog-gallery-list">
+                        <li class="blog-gallery-item">
+                            <a href="">All</a>
+                        </li>
+                        <li class="blog-gallery-item">
+                            <a href="./blog.html">Blog</a>
+                        </li>
+                        <li class="blog-gallery-item">
+                            <a href="">News</a>
+                        </li>
+                        <li class="blog-gallery-item">
+                            <a href="">Advice from the designer</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog-gallery__wrapper ">
+                    <div class="blog-gallery__card blog-gallery__card_1">
+                        <p class="blog-gallery__card_title">
+                            5 smart tips for productive collaboration with the designer
+                        </p>
+                        <p class="blog-gallery__card_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam.</p>
+                        @@include("./html/discoverBtn.html", {
+							"class" : "blog-gallery__card_wrapper-btn",
+							"btn-class" : "blog-gallery__card_btn",
+							"title" : "Discover more",
+                            "hor_lines_color" : "black"
+						})
+                    </div>
+                    <div class="blog-gallery__card blog-gallery__card_2"></div>
+                    <div class="blog-gallery__card blog-gallery__card_3">
+                        <p class="blog-gallery__card_tagline">
+                            Non-standard plinth options
+                        </div>
+                        <div class="blog-gallery__card blog-gallery__card_4">
+                            <p class="blog-gallery__card_tagline">
+                                Interior design, LCD Rybalsky
+                            </div>
+                            <div class="blog-gallery__card blog-gallery__card_5"></div>
+                            <div class="blog-gallery__card blog-gallery__card_6">
+                                <p class="blog-gallery__card_title">
+                                    5 smart tips for productive collaboration with the designer
+                                </p>
+                                <p class="blog-gallery__card_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam.</p>
+                                @@include("./html/discoverBtn.html", {
+                                    "class" : "blog-gallery__card_wrapper-btn",
+                                    "btn-class" : "blog-gallery__card_btn",
+                                    "title" : "Discover more",
+                                    "hor_lines_color" : "black"
+                                })
+                            </div>
+                        </div>
+                        <div class="blog-gallery__pages_wrapper">
+                            <img src="./img/Blog/pages.webp" alt="" class="blog-gallery__pages">
+                        </div>
+                    </section>
+                </main>
+                <footer class="blog-footer">
+                    <div class="blog-footer__content">
+                        <p class="blog-footer_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="blog-footer__descr-wrapper">
+                            <p class="blog-footer_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam.</p>
+                            <form action="" class="blog__form">
+                                <input placeholder="Email" class="blog-footer_email">
+                                <a href="#" class="blog__arrow-right">
+                                    <img src="./img/Blog/arrow-right.webp" alt="arrow-right">
+                                </a>
+                                <div class="blog__hor-line"></div>
+                            </form>
+                        </div>
+                    </div>
+                    @@include("./html/copyrightAndLogo.html")
+                </footer>
+            </body>
+        </html>

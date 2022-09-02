@@ -1,5 +1,4 @@
 @import "fonts";
-@import "reset";
 @import "vars";
 @import "components/_mixins.scss";
 @import "components/compontentBtn.scss";
@@ -8,6 +7,8 @@
 @import "header";
 @import "footer";
 @import "mainPage";
+@import "blog";
+@import "reset";
 @import "../../node_modules/swiper/swiper-bundle.css";
 
 body {
