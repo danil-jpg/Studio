@@ -228,6 +228,24 @@
   }
 }
 
+.blog-page {
+  .common-font-11 {
+    color: $textColor2;
+  }
+  .header__logo {
+    color: $textColor2;
+  }
+  .header__list.burger-active ~ .common-header-btn {
+    color: $textColor1;
+  }
+  .header__link {
+    color: #848484;
+  }
+  .laptop__burger {
+    transform: translate(-1px, 3px);
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .header__list.burger-active {
     transform: translate(0px, 307px) !important;
@@ -275,6 +293,16 @@
 
   .header__language {
     margin-left: 198px;
+  }
+
+  .blog-page {
+    .header__logo {
+      transform: translate(6px, -4px);
+    }
+
+    .laptop__burger {
+      transform: translate(-19px, 1px);
+    }
   }
 }
 
@@ -357,14 +385,5 @@
 
   .header__link_btn {
     display: initial;
-  }
-}
-
-.blog-page {
-  .common-font-11 {
-    color: $textColor2;
-  }
-  .header__logo {
-    color: $textColor2;
   }
 }

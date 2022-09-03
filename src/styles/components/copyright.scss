@@ -14,3 +14,17 @@
     transform: none;
   }
 }
+
+@media screen and (max-width: 1439px) {
+  .copyright-wrapper {
+    width: 912px;
+
+    .footer__pic {
+      margin-top: -10px;
+      width: 218px;
+      img {
+        transform: translate(31px, 2px);
+      }
+    }
+  }
+}

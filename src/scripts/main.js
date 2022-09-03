@@ -1,32 +1,11 @@
 import slider from "./_swiper.js";
 
 window.addEventListener("DOMContentLoaded", () => {
-  const mainPage = document.querySelector(".mainPage");
+  const mainPage = document.querySelector(".mainPage"),
+    blogPage = document.querySelector(".blog");
   // console.log(window.innerWidth);
   if (mainPage) {
     slider();
-
-    const burgerTrigger = document.querySelector(".laptop__icon"),
-      burgerTriggerClose = document.querySelector(".laptop__icon_close"),
-      headerlist = document.querySelector(".header__list"),
-      headerBottomBlock = document.querySelector(".slide__bottom_header"),
-      background = document.querySelector(".black_background");
-
-    burgerTrigger.addEventListener("click", () => {
-      headerlist.classList.toggle("burger-active");
-      background.classList.toggle("active");
-      burgerTriggerClose.style.display = "block";
-      burgerTrigger.style.display = "none";
-      headerBottomBlock.classList.toggle("header_active");
-    });
-
-    burgerTriggerClose.addEventListener("click", () => {
-      headerlist.classList.toggle("burger-active");
-      background.classList.toggle("active");
-      burgerTriggerClose.style.display = "none";
-      burgerTrigger.style.display = "block";
-      headerBottomBlock.classList.toggle("header_active");
-    });
 
     window.addEventListener("resize", () => {
       if (window.innerWidth <= 375) {
@@ -90,5 +69,37 @@ window.addEventListener("DOMContentLoaded", () => {
       //   galleryImg5.setAttribute("srcset", "../img/mainPage/Pic_5.webp");
       // }
     });
+  }
+
+  const burgerTrigger = document.querySelector(".laptop__icon"),
+    burgerTriggerClose = document.querySelector(".laptop__icon_close"),
+    headerlist = document.querySelector(".header__list"),
+    headerBottomBlock = document.querySelector(".slide__bottom_header"),
+    background = document.querySelector(".black_background");
+
+  burgerTrigger.addEventListener("click", () => {
+    headerlist.classList.toggle("burger-active");
+    background.classList.toggle("active");
+    burgerTriggerClose.style.display = "block";
+    burgerTrigger.style.display = "none";
+    headerBottomBlock.classList.toggle("header_active");
+
+    console.log(
+      document.querySelector(".header__list.burger-active + .common-header-btn")
+    );
+  });
+
+  burgerTriggerClose.addEventListener("click", () => {
+    headerlist.classList.toggle("burger-active");
+    background.classList.toggle("active");
+    burgerTriggerClose.style.display = "none";
+    burgerTrigger.style.display = "block";
+    headerBottomBlock.classList.toggle("header_active");
+  });
+
+  if (blogPage) {
+    const burger = document.querySelector(".laptop__icon");
+    console.log(burger);
+    burger.setAttribute("src", "../img/header/burger-img_black.webp");
   }
 });

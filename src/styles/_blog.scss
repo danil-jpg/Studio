@@ -6,11 +6,9 @@ html {
 }
 
 .blog-gallery {
-  display: inline-block;
+  display: block;
   width: 1312px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
+  margin: 0 auto;
 }
 
 .blog-gallery_top-wrapper {
@@ -313,5 +311,217 @@ html {
   }
   .gallery {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .blog-gallery {
+    width: 912px;
+  }
+  .blog-gallery__wr {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .blog-gallery_top-wrapper {
+    width: 319px;
+    flex-wrap: wrap;
+    margin-top: 125px;
+    margin-left: 103px;
+  }
+
+  .blog-gallery_title {
+    font-size: 2em;
+  }
+
+  .blog-gallery-list {
+    margin-top: -6px;
+    padding: 0;
+  }
+
+  .blog-gallery__wrapper {
+    grid-template-rows: repeat(3, 453px);
+    grid-gap: 6px;
+    grid-template-columns: 453px 453px;
+    margin-top: 96px;
+
+    min-height: 200px;
+    div {
+      background-size: contain;
+    }
+  }
+
+  .blog-gallery__card_4 {
+    margin-left: 0px;
+  }
+
+  .blog-gallery__card_title {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 159px;
+    margin-left: 46px;
+    width: 266px;
+  }
+
+  .blog-gallery__card_descr {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+
+    opacity: 0.7;
+    width: 335px;
+    margin-left: 46px;
+    margin-top: 0px;
+  }
+
+  .blog-gallery__card_wrapper-btn {
+    transform: translate(-10px, 7px);
+  }
+
+  .blog-gallery__card_6 {
+    .blog-gallery__card_title {
+      font-size: 20px;
+      line-height: 25px;
+      margin-top: 279px;
+      margin-left: 42px;
+      width: 266px;
+    }
+
+    .blog-gallery__card_descr {
+      display: none;
+    }
+
+    .blog-gallery__card_wrapper-btn {
+      transform: translate(-13px, -21px);
+    }
+  }
+
+  .blog-gallery__card_tagline {
+    font-size: 20px;
+    width: 188px;
+    line-height: 126.9%;
+    margin-left: 46px;
+    margin-top: 356px;
+  }
+
+  .blog-gallery__pages_wrapper {
+    margin-top: 62px;
+  }
+
+  .blog-footer {
+    height: 593px;
+
+    margin-top: 121px;
+    padding-top: 87px;
+    background-image: url(../img/Blog/footer__blog__laptop.webp);
+    background-size: 100% 100%;
+  }
+
+  .blog-footer__content {
+    width: 806px;
+    height: 317px;
+  }
+
+  .blog-footer_text {
+    font-size: 32px;
+    line-height: 39px;
+    width: 359px;
+    margin-left: 49px;
+  }
+
+  .blog-footer_descr {
+    margin-left: 13px;
+    margin-top: 0px;
+    transform: translate(0, 8px);
+    width: 345px;
+  }
+
+  .blog__form {
+    transform: translate(-13px, 13px);
+    /* font-size: 20px; */
+    /* line-height: 170.66%; */
+  }
+
+  .blog-footer_email {
+    font-size: 16px;
+    line-height: 219.66%;
+    transform: translate(17px, -4px);
+  }
+
+  .blog__hor-line {
+    width: 344px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(23px, -2px);
+  }
+  .blog__arrow-right {
+    position: absolute;
+    right: 22px;
+    top: 8px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .blog-gallery {
+    width: 672px;
+  }
+  .blog-gallery_top-wrapper {
+    margin-left: 76px;
+    width: 325px;
+    margin-top: 105px;
+  }
+
+  .blog-gallery__wrapper {
+    grid-template-rows: repeat(3, 333px);
+    grid-gap: 6px;
+    grid-template-columns: 333px 333px;
+    margin-top: 90px;
+  }
+  .blog-gallery__card_1,
+  .blog-gallery__card_6 {
+    .blog-gallery__card_title {
+      font-size: 16px;
+      width: 208px;
+      line-height: 20px;
+      margin-top: 185px;
+      margin-left: 32px;
+    }
+
+    .blog-gallery__card_descr {
+      display: none;
+    }
+
+    .blog-gallery__card_wrapper-btn {
+      transform: translate(-23px, -18px);
+    }
+  }
+  .blog-gallery__card_6 {
+    .blog-gallery__card_title {
+      margin-left: 26px;
+    }
+    .blog-gallery__card_wrapper-btn {
+      transform: translate(-29px, -18px);
+    }
+  }
+  .blog-gallery__card_tagline {
+    font-size: 20px;
+    width: 160px;
+    line-height: 126.9%;
+    margin-left: 32px;
+    margin-top: 258px;
+    font-size: 16px;
+    line-height: 126.9%;
+  }
+
+  .blog-gallery__pages_wrapper {
+    margin-top: 53px;
+
+    img {
+      width: 225px;
+    }
+  }
+  .blog-footer {
+    background-image: url(../img/Blog/blog-footer.webp);
+    margin-top: 100px;
   }
 }
