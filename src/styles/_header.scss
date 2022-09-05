@@ -386,4 +386,15 @@
   .header__link_btn {
     display: initial;
   }
+
+  .blog{
+    .laptop__burger {
+      transform: translate(232px,2px) ;
+      width: 0;
+      margin-left: 0;
+  }
+  .header__logo {
+    transform: translate(-8px,-4px);
+}
+  }
 }

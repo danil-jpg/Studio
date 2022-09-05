@@ -3,7 +3,7 @@ import slider from "./_swiper.js";
 window.addEventListener("DOMContentLoaded", () => {
   const mainPage = document.querySelector(".mainPage"),
     blogPage = document.querySelector(".blog");
-  // console.log(window.innerWidth);
+
   if (mainPage) {
     slider();
 
@@ -18,18 +18,11 @@ window.addEventListener("DOMContentLoaded", () => {
           galleryWrapper4 = document.querySelector(
             ".gallery__imgs_texts_4 .gallery__imgs_bottom-text"
           );
-        // galleryWrapper5 = document.querySelector(
-        //   ".gallery__imgs_texts_5 .gallery__imgs_bottom-text"
-        // )
-
-        // console.log("375px", window.innerWidth);
 
         galleryWrapper2.textContent = "Eyewear store interior";
         galleryWrapper3.textContent = "Minimalist style home";
         galleryWrapper4.textContent = "Eyewear store interior";
       } else if (380 < window.innerWidth && window.innerWidth <= 768) {
-        // console.log(380 < window.innerWidth && window.innerWidth <= 768);
-        // console.log(380 < (window.innerWidth <= 768));
         let galleryWrapper1 = document.querySelector(
             ".gallery__imgs_texts_1 .gallery__imgs_bottom-text"
           ),
@@ -50,6 +43,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         galleryImg1.setAttribute("src", "../img/mainPage/Pic_1_change.webp");
         galleryImg3.setAttribute("src", "../img/mainPage/Pic_3_change.webp");
+
         galleryImg4.setAttribute("src", "../img/mainPage/Pic_4_change.webp");
         galleryImg5.setAttribute("srcset", "../img/mainPage/Pic_5_change.webp");
 
@@ -98,8 +92,30 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   if (blogPage) {
-    const burger = document.querySelector(".laptop__icon");
-    console.log(burger);
+    const burger = document.querySelector(".laptop__icon"),
+      blogFooterText = document.querySelector(".blog-footer_descr"),
+      blogGalleryTitle = document.querySelector(".blog-gallery_title"),
+      blogGalleryList = document.querySelector(".blog-gallery-list"),
+      blogGalleryListMobileImg = document.querySelector(
+        ".blog-gallery-list_mobile img"
+      ),
+      blogGalleryListMobile = document.querySelector(
+        ".blog-gallery-list_mobile"
+      );
+
+    if (window.innerWidth <= 1023) {
+      blogFooterText.textContent =
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.";
+    }
+
+    if (window.innerWidth <= 767) {
+      blogGalleryTitle.textContent = "Our news";
+      blogGalleryListMobile.addEventListener("click", () => {
+        blogGalleryList.classList.toggle("none-mobile");
+        blogGalleryListMobileImg.classList.toggle("rotate180");
+      });
+    }
+
     burger.setAttribute("src", "../img/header/burger-img_black.webp");
   }
 });

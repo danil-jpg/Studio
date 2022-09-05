@@ -28,3 +28,26 @@
     }
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .copyright-wrapper {
+    width: 672px;
+    margin-top: 101px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .copyright-wrapper {
+    width: 226px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* position: relative; */
+    margin: 0;
+    margin-top: 82px;
+    margin-left: 25px;
+  }
+
+  .footer__pic {
+    margin-left: 2px;
+  }
+}
