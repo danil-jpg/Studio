@@ -1,8 +1,10 @@
 import slider from "./_swiper.js";
+import Swiper, { Navigation, Pagination } from "swiper";
 
 window.addEventListener("DOMContentLoaded", () => {
   const mainPage = document.querySelector(".mainPage"),
-    blogPage = document.querySelector(".blog");
+    blogPage = document.querySelector(".blog"),
+    newsPage = document.querySelector(".one-new");
 
   if (mainPage) {
     slider();
@@ -117,5 +119,36 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     burger.setAttribute("src", "../img/header/burger-img_black.webp");
+  }
+
+  if (newsPage) {
+    const copyRightImg = document.querySelector(".footer__pic img");
+
+    copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
+
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 0,
+      slidesPerView: 3.4,
+
+      centeredSlides: false,
+      roundLengths: false,
+      loop: true,
+
+      // breakpoints: {
+      //   1440: {
+      //     slidesPerView: 1.175,
+      //   },
+      //   1024: {
+      //     spaceBetween: 0,
+      //     slidesPerView: 1.189,
+      //   },
+      //   768: {
+      //     slidesPerView: 1.17,
+      //   },
+      //   375: {
+      //     slidesPerView: 1.19,
+      //   },
+      // },
+    });
   }
 });
