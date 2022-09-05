@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>One new</title>
+        <link rel="stylesheet" href="./styles/main.min.css">
+    </head>
+    <body class="blog">
+        @@include("./html/header.html",{
+			"class":"blog-page",
+			"class2":"main-page"
+		})
+        <section class="news-top">
+            <div class="news-top__text-wrapper">
+                <h1 class="news-top__title">Antrax IT - Italian factory for the production</h1>
+                <div class="news-top__share">
+                    <span>Share:</span>
+                    <div class="news-top__logos">
+                        <img src="./img/OneNew/facebook.webp" alt="facebook" class="logo-1">
+                        <img src="./img/OneNew/twitter.webp" alt="twitter" class="logo-2">
+                        <img src="./img/OneNew/linkedin.webp" alt="linkedin" class="logo-3">
+                        <img src="./img/OneNew/lastSym.webp" alt="etc" class="logo-4">
+                    </div>
+                </div>
+                <p class="news-top__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam. Donec et ipsum nec quam posuere maximus eu in erat. Duis laoreet finibus consectetur. Nullam pulvinar ex sit amet leo gravida, sed mattis enim vehicula. Duis purus nisl, consectetur ut est non, placerat eleifend turpis. Duis auctor suscipit arcu. Aenean leo est, rutrum a eleifend eget, tempor nec urna. Proin finibus lobortis arcu dictum convallis. Ut fermentum eu magna vel laoreet. In lacus augue, malesuada id elit sit amet, varius imperdiet ex. Nullam blandit lobortis posuere.</p>
+            </div>
+            <picture>
+                <img src="./img/OneNew/news-img-1.webp" alt="img1" class="news-img_1">
+            </picture>
+        </section>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
