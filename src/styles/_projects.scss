@@ -26,6 +26,10 @@
   width: 449px;
   height: 72px;
   margin-top: 10px;
+
+  br {
+    display: none;
+  }
 }
 
 .projects__top-right-wrapper {
@@ -78,4 +82,108 @@
 
 .projects-footer {
   margin-top: 152px;
+}
+
+@media screen and (max-width: 1439px) {
+  .projectsPage {
+    .common-header-btn {
+      margin-left: 56px;
+      margin-top: 2px;
+    }
+  }
+  .projects {
+    margin: 146px auto 0;
+    width: 912px;
+  }
+
+  .projects__top-wrapper {
+    width: 448px;
+    margin: 0;
+    flex-wrap: wrap;
+    margin-left: 104px;
+  }
+
+  .projects__top-titile {
+    height: 31px;
+  }
+
+  .projects__top-right-wrapper {
+    width: 99.8%;
+  }
+
+  .projects__top-descr {
+    margin-top: -31px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .projects-gallery-list {
+    width: 340px;
+
+    .blog-gallery-item {
+      letter-spacing: 0.006em;
+    }
+    .blog-gallery-item:nth-child(2) {
+      transform: translate(-2px, 0px);
+    }
+  }
+
+  .projectsPage {
+    .gallery {
+      margin-top: 302px;
+    }
+
+    .gallery__imgs_template {
+      grid-template-rows: 453px 452px 453px 453px;
+    }
+    .pic_4 {
+      position: relative;
+    }
+    .pic_4::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      opacity: 0.3;
+      /* background-color: #000; */
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 16.12%,
+        rgba(0, 0, 0, 0.63) 101.15%
+      );
+      height: 100%;
+      pointer-events: none;
+      transition: 0.3s;
+    }
+    .pic_4,
+    .pic_5 {
+      transform: none;
+    }
+    .pic_3 {
+      .button-with-lines {
+        transform: translate(609px, -42px);
+      }
+    }
+    .pic_6 {
+      .button-with-lines {
+        transform: translate(607px, -42px);
+      }
+    }
+
+    .gallery__bottom {
+      margin-top: -59px;
+
+      .gallery__bottom_side_text_bottom {
+        transform: translate(-268px, 40px);
+        display: block;
+      }
+    }
+  }
+
+  .projects-footer {
+    margin-top: -172px;
+  }
 }

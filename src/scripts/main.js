@@ -151,5 +151,6 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   if (projectsPage) {
     copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
+    burger.setAttribute("src", "../img/header/burger-img_black.webp");
   }
 });
