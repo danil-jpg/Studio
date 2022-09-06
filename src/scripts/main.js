@@ -122,10 +122,17 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   if (newsPage) {
-    const copyRightImg = document.querySelector(".footer__pic img");
+    const copyRightImg = document.querySelector(".footer__pic img"),
+      changeText2 = document.querySelectorAll(
+        ".news-top__text-wrapper_2 .news-top__descr"
+      )[1];
 
     copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
-
+    if (window.innerWidth <= 1439) {
+      changeText2.textContent =
+        "Ut arcu tortor, hendrerit eget sollicitudin sed, tincidunt a lectus. Cras gravida ultricies ante sit amet consectetur. Maecenas sed arcu tempor, posuere odio pharetra, faucibus risus. Etiam fermentum felis quis aliquet viverra. Mauris in odio nec mi pellentesque placerat. Praesent at metus in lacus posuere molestie. Aliquam consequat, neque eget congue feugiat, lectus leo condimentum lorem, scelerisque euismod nisi ipsum nec metus. Mauris semper felis venenatis eros interdum sollicitudin.";
+    }
+    console.log(changeText2);
     const swiper = new Swiper(".swiper", {
       spaceBetween: 0,
       slidesPerView: 3.4,
@@ -134,21 +141,21 @@ window.addEventListener("DOMContentLoaded", () => {
       roundLengths: false,
       loop: true,
 
-      // breakpoints: {
-      //   1440: {
-      //     slidesPerView: 1.175,
-      //   },
-      //   1024: {
-      //     spaceBetween: 0,
-      //     slidesPerView: 1.189,
-      //   },
-      //   768: {
-      //     slidesPerView: 1.17,
-      //   },
-      //   375: {
-      //     slidesPerView: 1.19,
-      //   },
-      // },
+      breakpoints: {
+        1440: {
+          slidesPerView: 3.4,
+        },
+        1024: {
+          spaceBetween: -55,
+          slidesPerView: 2.9,
+        },
+        // 768: {
+        //   slidesPerView: 1.17,
+        // },
+        // 375: {
+        //   slidesPerView: 1.19,
+        // },
+      },
     });
   }
 });
