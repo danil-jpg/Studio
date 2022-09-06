@@ -4,104 +4,41 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>home</title>
+        <title>Projects</title>
         <link rel="stylesheet" href="./styles/main.min.css">
     </head>
-    <body class="mainPage">
-        <!-- Header -->
-        @@include("./html/header.html", {
-          "class" : "main-page",
-        })
-        <!-- Header -->
-        <main class="IndexPage">
-            <section class="slide">
-                <div class="slide__content">
-                    <h1 class="slider__title">
-                        Thoughtful 
-    making of space
-                    </h1>
-                    @@include("./html/discoverBtn.html", {
-                        "class" : "button-with-lines_mainPage ",
-                        "btn-class" : "",
-                        "title" : "Discover more"
-                    })
-                    <div class="slide__pagination ">
-                        <img src="img/mainPage/leftArrow.webp" alt="leftArrow" class="leftArrow swiper-button-prev">
-                        <p class="slide__num common-font-11">01</p>
-                        <img src="img/mainPage/line.webp" alt="line" class="line ">
-                        <p class="slide__num common-font-11">02</p>
-                        <img src="img/mainPage/rightArrow.webp" alt="rightArrow" class="rightArrow swiper-button-next">
-                    </div>
-                    <div class="slide__bottom">
-                        <div class="slide__language">
-                            <p class="slide__lang common-font-11">Fb</p>
-                            <p class="slide__lang common-font-11">In</p>
-                            <p class="slide__lang common-font-11">Be</p>
-                        </div>
-                        <button class="slide__berlin">
-                            <img src="img/mainPage/point.webp" alt="point" class="point">
-                            <span class="common-font-11 Berlin">Berlin</span>
-                            <img src="img/mainPage/arrow_bottom.webp" alt="arrow_bottom" class="arrow_bottom">
-                        </button>
-                        <a href="#" class="slide__tel common-font-11">+380983527547</a>
-                        <a href="#" class="slide__email common-font-11">E: info@gmail.com</a>
-                    </div>
-                    <div class="slide__ver-block">
-                        <p class="slide__ver-block-title">Next Project</p>
-                        <p class="slide__ver-block-text">
-                            Perfect 
-                            proportions
+    <body class="projectsPage">
+        @@include("./html/header.html",{
+			"class" : "blog-page",
+			"class2" : "projects-page"
+		})
+        <main>
+            <section class="projects">
+                <div class="projects__top-wrapper">
+                    <p class="news-top__title projects__top-titile ">Our Projects</p>
+                    <div class="projects__top-right-wrapper">
+                        <p class="news-top__descr projects__top-descr ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
                         </p>
-                    </div>
-                </div>
-                <div class="swiper ">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="first-slide"></div>
+                        <ul class="blog-gallery-list none-mobile projects-gallery-list">
+                            <li class="blog-gallery-item">
+                                <a href="">House</a>
+                            </li>
+                            <li class="blog-gallery-item">
+                                <a href="./blog.html">Apartments</a>
+                            </li>
+                            <li class="blog-gallery-item">
+                                <a href="./one-new.html">Commerce</a>
+                            </li>
+                            <li class="blog-gallery-item">
+                                <a href="">Architecture</a>
+                            </li>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="second-slide"></div>
-                        </div>
                     </div>
-                </div>
+                </ul>
             </section>
-            <section class="phil">
-                <div class="phil__descr_wrapper">
-                    <h1 class="phil__title">Company Philosophy</h1>
-                    <p class="phil__descr phil__descr_1">
-                        The basic philosophy of our studio is to create individual, aesthetically stunning solutions for our customers by
-                        <br class="visible_1024_not_768">
-                        lightning-fast development of projects employing unique styles and architecture. Even if you don't have a ready sketch of what you want - we will help you get the result.
-                    </p>
-                    <p class="phil__descr phil__descr_2">We can also help you create harmony out of seemingly completely incompatible elements in the interior or the exterior design. Do you want to combine classics and abstract art? Modern and retro? Love everything associated with the 1940's? No problem!</p>
-                </div>
-                @@include("./html/discoverBtn.html",{
-                    "class" : "phil__button",
-                    "btn-class" : "phil__button_black",
-                    "hor_lines_color" : "phil__hor_line",
-                    "title" : "Discover more"
-                })
-                <picture class="phil__img-1">
-                    <source srcset="img/mainPage/table_1-mobile.webp" media="(max-width: 1025px)">
-                    <img src="img/mainPage/table_1.webp" alt="table_1" class="phil__img-1">
-                </picture>
-                <img src="img/mainPage/Bedroom_1.webp" alt="Bedroom_1" class="phil__img-2">
-                <img src="img/mainPage/sofas_1.webp" alt="sofas_1" class="phil__img-3">
-                <p class="phil__quote">“</p>
-                <p class="phil__text-bottom">We can also help you create harmony out of seemingly completely incompatible elements in the interior or the exterior design.</p>
-                @@include("./html/sideComp.html",{
-                    "class_wrapper" : "phil__side_text",
-                    "title" : "ABOUT",
-                })
-
-                @@include("./html/sideComp.html",{
-                    "class_wrapper" : "phil__side_text_bottom",
-                    "title" : "Ceo company",
-                    "line_margin" : "phil__bottom_line"
-                })
-            </section>
-            <section class="gallery">
-                <div class="gallery_content_wrapper">
+            <section class="gallery projects-gallery">
+                <div class="gallery_content_wrapper projects-gallery">
                     <h2 class="gallery__title">Our Projects</h2>
                     <p class="gallery__descr">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
@@ -239,7 +176,12 @@
                         <picture>
                             <source srcset="img/mainPage/Pic_6_mobile.webp" media="(max-width:767px)" class="source_img_5">
                             <source srcset="img/mainPage/Pic_5_laptop.webp" media="(max-width:1439px)" class="source_img_5">
-                            <img src="img/mainPage/Pic_5.webp" alt="Pic_1" class="img_5">
+                            <img src="img/Projects/projects-pir-5.webp" alt="Pic_1" class="img_5">
+                        </picture>
+                    </div>
+                    <div class="gallery__imgs_wrapper pic_6">
+                        <picture>
+                            <img src="img/Projects/projects-pir-6.webp" alt="Pic_1" class="img_5">
                         </picture>
                     </div>
                 </div>
@@ -259,78 +201,10 @@
                     })
                 </div>
             </section>
-            <section class="picture">
-                <h3 class="picture__title">@lorem.ipsum</h3>
-                <p class="picture_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere.</p>
-                <div class="picture__pic_1"></div>
-                <div class="picture__pic_2"></div>
-                <div class="picture__pic_3"></div>
-                <div class="picture__pic_4"></div>
-                <div class="picture__pic_5"></div>
-                <div class="picture__pic_6"></div>
-                <div class="picture__pic_7"></div>
-                <div class="picture__pic_8"></div>
-            </section>
         </main>
-        <footer class="footer footerHomePage">
-            @@include("./html/sideComp.html",{
-                "class" : "footer__btn",
-                "title" : "Contacts",
-                "line_margin" : "footer__long_line"
-            })
-            <div class="footer__content_block">
-                <h2 class="footer__title">Drop us a line</h2>
-                <p class="footer__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere.</p>
-                <div class="footer__cities">
-                    <div class="footer__city-1">
-                        <p class="footer__city-kiyv footer__city_name">Kyiv</p>
-                        <p class="footer__adress">
-                            (209) 555-0104
-                            <br>
-                            6391 Elgin St. Celina,
-            Delaware 10299
-                        </p>
-                    </div>
-                    <div class="footer__city-2">
-                        <p class="footer__city-lviv footer__city_name">Lviv</p>
-                        <p class="footer__adress">
-                            (209) 555-0104
-                            <br>
-                            6391 Elgin St. Celina,
-            Delaware 10299
-                        </p>
-                    </div>
-                    <div class="footer__city-3">
-                        <p class="footer__city-kharkiv footer__city_name">Kharkiv</p>
-                        <p class="footer__adress">
-                            (209) 555-0104
-                            <br>
-                            6391 Elgin St. Celina,
-            Delaware 10299
-                        </p>
-                    </div>
-                </div>
-                @@include("./html/commonBtn.html",{
-                    "class1" : "footer__btn_req",
-                    "class2" : " ",
-                    "title" : "Make request"
-                })
-                <div class="footer__info">
-                    <a href="#" class="slide__email common-font-11">info@gmail.com</a>
-                    <div class="slide__language">
-                        <p class="slide__lang common-font-11 footer__lang">Fb</p>
-                        <p class="slide__lang common-font-11 footer__lang">In</p>
-                        <p class="slide__lang common-font-11 footer__lang">Be</p>
-                    </div>
-                </div>
-                <p class="footer__copyright">© Copyright 2018. All rights reserved</p>
-                <div class="footer__pic">
-                    <p>Made with love in</p>
-                    <img src="../img/mainPage/footerPic.webp" alt="pic">
-                </div>
-                <!-- @@include("./copyrightAndLogo.html") -->
-            </div>
+        <footer class="projects-footer">
+            @@include("./html/copyrightAndLogo.html")
         </footer>
-        <script src="scripts/main.js"></script>
+        <script src="./scripts/main.js"></script>
     </body>
 </html>

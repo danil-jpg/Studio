@@ -4,7 +4,8 @@ import Swiper, { Navigation, Pagination } from "swiper";
 window.addEventListener("DOMContentLoaded", () => {
   const mainPage = document.querySelector(".mainPage"),
     blogPage = document.querySelector(".blogPage"),
-    newsPage = document.querySelector(".one-new");
+    newsPage = document.querySelector(".one-new"),
+    projectsPage = document.querySelector(".projectsPage");
 
   const burgerTrigger = document.querySelector(".laptop__icon"),
     burgerLogo = document.querySelector(".header__logo"),
@@ -147,5 +148,8 @@ window.addEventListener("DOMContentLoaded", () => {
         },
       },
     });
+  }
+  if (projectsPage) {
+    copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
   }
 });
