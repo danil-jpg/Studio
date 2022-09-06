@@ -62,4 +62,11 @@
   .footer__pic {
     margin-left: 2px;
   }
+
+  .one-new .copyright-wrapper {
+    margin: -50px 25px 0;
+    .footer__copyright {
+      transform: translate(-1px);
+    }
+  }
 }

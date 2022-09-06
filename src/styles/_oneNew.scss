@@ -475,3 +475,133 @@
     height: 557px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .news-top {
+    margin-top: 116px;
+  }
+
+  .news-top__text-wrapper {
+    width: 327px;
+  }
+
+  .news-top__title {
+    font-size: 26px;
+    line-height: 32px;
+    width: 327px;
+  }
+  .news-top__text-wrapper_1 {
+    .news-top__descr {
+      margin-top: -9px;
+    }
+  }
+
+  .news-img_1 {
+    width: 327px;
+    height: 220px;
+    margin-top: 55px;
+  }
+
+  .news-top__text-wrapper_2 {
+    .news-top__tagline {
+      width: 100%;
+      margin-top: 64px;
+    }
+
+    .news-top__ol {
+      margin-top: 24px;
+      width: 100%;
+    }
+  }
+
+  .news-top__gallery {
+    width: 327px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px 393px 393px;
+    margin-top: 68px;
+    .news-top__img-wrapper:first-child {
+      grid-column: 1/1;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  .news-top__text-wrapper_3 {
+    .news-top__descr {
+      margin-top: 21px;
+    }
+    margin-top: -8px;
+
+    .news-top__ol {
+      width: 100%;
+
+      li:first-letter {
+        color: currentColor;
+      }
+      li {
+        padding-left: 15px;
+        line-height: 161.66%;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 18%;
+          left: 0;
+        }
+      }
+      .spsp {
+        margin-left: 0;
+      }
+
+      li:nth-of-type(3) {
+        img {
+          top: 48%;
+        }
+      }
+    }
+
+    .news-top__descr:nth-of-type(2) {
+      width: 100%;
+      margin-top: 34px;
+    }
+  }
+
+  .news-top__descr {
+    margin-top: 23px;
+  }
+
+  .news-top__share {
+    top: 723px;
+
+    .news-top__logos {
+      margin-top: 10px;
+    }
+  }
+
+  .news-top {
+    .hor-line {
+      width: 100%;
+      margin-top: 155px;
+    }
+  }
+
+  .news-bottom {
+    padding-left: 6.3%;
+    margin-top: 78px;
+  }
+
+  .news-bottom_sideBtn {
+    display: none;
+  }
+
+  .news-bottom__pic {
+    width: 290px;
+    height: 357px;
+  }
+
+  .news-bottom__text-wrapper {
+    transform: translate(1px, -2px);
+  }
+}

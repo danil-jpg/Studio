@@ -161,9 +161,9 @@ window.addEventListener("DOMContentLoaded", () => {
           spaceBetween: -108,
           slidesPerView: 1.7,
         },
-        // 375: {
-        //   slidesPerView: 1.19,
-        // },
+        375: {
+          slidesPerView: 1.19,
+        },
       },
     });
   }
