@@ -3,7 +3,7 @@ import Swiper, { Navigation, Pagination } from "swiper";
 
 window.addEventListener("DOMContentLoaded", () => {
   const mainPage = document.querySelector(".mainPage"),
-    blogPage = document.querySelector(".blog"),
+    blogPage = document.querySelector(".blogPage"),
     newsPage = document.querySelector(".one-new");
 
   if (mainPage) {
@@ -125,14 +125,22 @@ window.addEventListener("DOMContentLoaded", () => {
     const copyRightImg = document.querySelector(".footer__pic img"),
       changeText2 = document.querySelectorAll(
         ".news-top__text-wrapper_2 .news-top__descr"
-      )[1];
+      )[1],
+      changeOlLi2 = document.querySelector(
+        ".news-top__text-wrapper_2 ol li:nth-child(2)"
+      );
+
+    console.log(changeOlLi2);
 
     copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
     if (window.innerWidth <= 1439) {
       changeText2.textContent =
         "Ut arcu tortor, hendrerit eget sollicitudin sed, tincidunt a lectus. Cras gravida ultricies ante sit amet consectetur. Maecenas sed arcu tempor, posuere odio pharetra, faucibus risus. Etiam fermentum felis quis aliquet viverra. Mauris in odio nec mi pellentesque placerat. Praesent at metus in lacus posuere molestie. Aliquam consequat, neque eget congue feugiat, lectus leo condimentum lorem, scelerisque euismod nisi ipsum nec metus. Mauris semper felis venenatis eros interdum sollicitudin.";
     }
-    console.log(changeText2);
+    if (window.innerWidth <= 1023) {
+      changeOlLi2.textContent =
+        "2. Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod.";
+    }
     const swiper = new Swiper(".swiper", {
       spaceBetween: 0,
       slidesPerView: 3.4,
@@ -149,9 +157,10 @@ window.addEventListener("DOMContentLoaded", () => {
           spaceBetween: -55,
           slidesPerView: 2.9,
         },
-        // 768: {
-        //   slidesPerView: 1.17,
-        // },
+        768: {
+          spaceBetween: -108,
+          slidesPerView: 1.7,
+        },
         // 375: {
         //   slidesPerView: 1.19,
         // },
