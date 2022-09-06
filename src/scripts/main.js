@@ -6,6 +6,30 @@ window.addEventListener("DOMContentLoaded", () => {
     blogPage = document.querySelector(".blogPage"),
     newsPage = document.querySelector(".one-new");
 
+  const burgerTrigger = document.querySelector(".laptop__icon"),
+    burgerLogo = document.querySelector(".header__logo"),
+    burgerTriggerClose = document.querySelector(".laptop__icon_close"),
+    headerlist = document.querySelector(".header__list"),
+    headerBottomBlock = document.querySelector(".slide__bottom_header"),
+    background = document.querySelector(".black_background");
+
+  const burger = document.querySelector(".laptop__icon"),
+    blogFooterText = document.querySelector(".blog-footer_descr"),
+    blogGalleryTitle = document.querySelector(".blog-gallery_title"),
+    blogGalleryList = document.querySelector(".blog-gallery-list"),
+    blogGalleryListMobileImg = document.querySelector(
+      ".blog-gallery-list_mobile img"
+    ),
+    blogGalleryListMobile = document.querySelector(".blog-gallery-list_mobile");
+
+  const copyRightImg = document.querySelector(".footer__pic img"),
+    changeText2 = document.querySelectorAll(
+      ".news-top__text-wrapper_2 .news-top__descr"
+    )[1],
+    changeOlLi2 = document.querySelector(
+      ".news-top__text-wrapper_2 ol li:nth-child(2)"
+    );
+
   if (mainPage) {
     slider();
 
@@ -48,44 +72,21 @@ window.addEventListener("DOMContentLoaded", () => {
 
         galleryImg4.setAttribute("src", "../img/mainPage/Pic_4_change.webp");
         galleryImg5.setAttribute("srcset", "../img/mainPage/Pic_5_change.webp");
-
-        // console.log("768px", window.innerWidth);
       }
-      // } else {
-      //   let galleryWrapper3 = document.querySelector(
-      //       ".gallery__imgs_wrapper.pic_3"
-      //     ),
-      //     galleryWrapper5 = document.querySelector(
-      //       ".gallery__imgs_wrapper.pic_5"
-      //     ),
-      //     galleryImg3 = document.querySelector(".img_3"),
-      //     galleryImg5 = document.querySelector(".source_img_5");
-
-      //   galleryImg3.setAttribute("src", "../img/mainPage/Pic_3.webp");
-      //   galleryImg5.setAttribute("srcset", "../img/mainPage/Pic_5.webp");
-      // }
     });
   }
 
-  const burgerTrigger = document.querySelector(".laptop__icon"),
-    burgerTriggerClose = document.querySelector(".laptop__icon_close"),
-    headerlist = document.querySelector(".header__list"),
-    headerBottomBlock = document.querySelector(".slide__bottom_header"),
-    background = document.querySelector(".black_background");
-
   burgerTrigger.addEventListener("click", () => {
+    burgerLogo.classList.toggle("header__logo_white");
     headerlist.classList.toggle("burger-active");
     background.classList.toggle("active");
     burgerTriggerClose.style.display = "block";
     burgerTrigger.style.display = "none";
     headerBottomBlock.classList.toggle("header_active");
-
-    console.log(
-      document.querySelector(".header__list.burger-active + .common-header-btn")
-    );
   });
 
   burgerTriggerClose.addEventListener("click", () => {
+    burgerLogo.classList.toggle("header__logo_white");
     headerlist.classList.toggle("burger-active");
     background.classList.toggle("active");
     burgerTriggerClose.style.display = "none";
@@ -94,17 +95,6 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   if (blogPage) {
-    const burger = document.querySelector(".laptop__icon"),
-      blogFooterText = document.querySelector(".blog-footer_descr"),
-      blogGalleryTitle = document.querySelector(".blog-gallery_title"),
-      blogGalleryList = document.querySelector(".blog-gallery-list"),
-      blogGalleryListMobileImg = document.querySelector(
-        ".blog-gallery-list_mobile img"
-      ),
-      blogGalleryListMobile = document.querySelector(
-        ".blog-gallery-list_mobile"
-      );
-
     if (window.innerWidth <= 1023) {
       blogFooterText.textContent =
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.";
@@ -122,16 +112,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   if (newsPage) {
-    const copyRightImg = document.querySelector(".footer__pic img"),
-      changeText2 = document.querySelectorAll(
-        ".news-top__text-wrapper_2 .news-top__descr"
-      )[1],
-      changeOlLi2 = document.querySelector(
-        ".news-top__text-wrapper_2 ol li:nth-child(2)"
-      );
-
-    console.log(changeOlLi2);
-
+    burger.setAttribute("src", "../img/header/burger-img_black.webp");
     copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
     if (window.innerWidth <= 1439) {
       changeText2.textContent =
