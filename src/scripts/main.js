@@ -150,6 +150,26 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
   if (projectsPage) {
+    const projectsGalleryPageText1 = document.querySelector(
+        ".gallery__imgs_texts_1 .gallery__imgs_bottom-text"
+      ),
+      projectsGalleryPageText3 = document.querySelector(
+        ".gallery__imgs_texts_3 .gallery__imgs_bottom-text"
+      ),
+      projectsGalleryPageText4 = document.querySelector(
+        ".gallery__imgs_texts_4 .gallery__imgs_bottom-text"
+      ),
+      projectsGalleryPageText6 = document.querySelector(
+        ".pic_6 .gallery__imgs_texts_3 .gallery__imgs_bottom-text"
+      );
+    if (window.innerWidth <= 1023) {
+      projectsGalleryPageText1.textContent = "Residence by the lighthouse";
+      projectsGalleryPageText3.textContent = "Minimalist style home";
+      projectsGalleryPageText4.textContent = "Minimalist style home";
+      projectsGalleryPageText6.textContent = "House on a Hillside";
+    }
+
+    console.log(projectsGalleryPageText1);
     copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
     burger.setAttribute("src", "../img/header/burger-img_black.webp");
   }
