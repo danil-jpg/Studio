@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>One project</title>
+        <link rel="stylesheet" href="./styles/main.min.css">
+    </head>
+    <body class="oneProjectPage">
+        @@include("./html/header.html",{
+			"class" : "",
+			"class2" : "oneProject"
+		})
+        <section class="project-top">
+            <div class="project-top__content-wrapper">
+                <div class="project-top__text-wrapper">
+                    <h2 class="project-top__title">Residence by the lighthouse</h2>
+                    <p class="project-top__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
+                    <div class="project-top__icons-wrapper">
+                        <div class="project-top__icon-content">
+                            <img src="./img/OneProjects/point.svg" alt="icon" class="project-top__icon">
+                            <p class="project-top__icon-text">Lodz, Poland</p>
+                        </div>
+                        <div class="project-top__icon-content">
+                            <img src="./img/OneProjects/calendar.svg" alt="icon" class="project-top__icon">
+                            <p class="project-top__icon-text">16.10.2018</p>
+                        </div>
+                        <div class="project-top__icon-content">
+                            <img src="./img/OneProjects/triangle.svg" alt="icon" class="project-top__icon">
+                            <p class="project-top__icon-text">80 sq.m</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-top__social-block-wrapper">
+                    <p class="project-top__socials-text">
+                        Share:
+                    </p>
+                    <div class="project-top__socials-img-wrapper">
+                        <a href="facebook.com">
+                            <img src="./img/OneProjects/facebook-empty.webp" alt="icon" class="social-empty">
+                        </a>
+                        <a href="#">
+                            <img src="./img/OneProjects/twitter-empty.webp" alt="icon" class="social-empty">
+                        </a>
+                        <a href="#">
+                            <img src="./img/OneProjects/linkedin-empty.webp" alt="icon" class="social-empty">
+                        </a>
+                        <a href="#">
+                            <img src="./img/OneProjects/last-empty.webp" alt="icon" class="social-empty">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
