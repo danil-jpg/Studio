@@ -387,14 +387,25 @@
     display: initial;
   }
 
-  .blog{
+  .blog {
     .laptop__burger {
-      transform: translate(232px,2px) ;
+      transform: translate(232px, 2px);
       width: 0;
       margin-left: 0;
+    }
+    .header__logo {
+      transform: translate(-8px, -4px);
+    }
   }
-  .header__logo {
-    transform: translate(-8px,-4px);
-}
+
+  .projectsPage {
+    .laptop__burger {
+      transform: translate(232px, 2px);
+      width: 0;
+      margin-left: 0;
+    }
+    .header__logo {
+      transform: translate(-8px, -4px);
+    }
   }
 }

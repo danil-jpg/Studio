@@ -153,11 +153,17 @@ window.addEventListener("DOMContentLoaded", () => {
     const projectsGalleryPageText1 = document.querySelector(
         ".gallery__imgs_texts_1 .gallery__imgs_bottom-text"
       ),
+      projectsGalleryPageText2 = document.querySelector(
+        ".gallery__imgs_texts_2 .gallery__imgs_bottom-text"
+      ),
       projectsGalleryPageText3 = document.querySelector(
         ".gallery__imgs_texts_3 .gallery__imgs_bottom-text"
       ),
       projectsGalleryPageText4 = document.querySelector(
         ".gallery__imgs_texts_4 .gallery__imgs_bottom-text"
+      ),
+      projectsGalleryPageText5 = document.querySelector(
+        ".pic_5 .gallery__imgs_texts_4 .gallery__imgs_bottom-text"
       ),
       projectsGalleryPageText6 = document.querySelector(
         ".pic_6 .gallery__imgs_texts_3 .gallery__imgs_bottom-text"
@@ -169,7 +175,17 @@ window.addEventListener("DOMContentLoaded", () => {
       projectsGalleryPageText6.textContent = "House on a Hillside";
     }
 
-    console.log(projectsGalleryPageText1);
+    if (window.innerWidth <= 767) {
+      projectsGalleryPageText2.textContent = "Eyewear store interior";
+      projectsGalleryPageText4.textContent = "Eyewear store interior";
+      projectsGalleryPageText5.textContent = "House on a Hillside";
+
+      blogGalleryListMobile.addEventListener("click", () => {
+        blogGalleryList.classList.toggle("none-mobile");
+        blogGalleryListMobileImg.classList.toggle("rotate180");
+      });
+    }
+
     copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
     burger.setAttribute("src", "../img/header/burger-img_black.webp");
   }
