@@ -224,3 +224,54 @@
 .one-project-gallery__bottom-btn:hover {
   border: 1px dashed #acacac;
 }
+
+.one-project__collage-block {
+  height: 1321px;
+  background-color: black;
+  width: 100%;
+  padding-top: 3px;
+  margin: 140px auto;
+
+  .gallery__bottom_side_text_bottom {
+    display: none;
+  }
+}
+.oneProjectPage {
+  .gallery__bottom_btn {
+    transform: translate(710px, 131px);
+  }
+}
+
+.one-project__collage-block_bottom {
+  margin-top: 308px;
+}
+
+.one-project__collage-block_bottom_title {
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #828282;
+  width: 92px;
+  margin: 0 auto;
+  transform: translate(1px);
+}
+
+.one-project__collage-block_bottom_descr {
+  width: 371px;
+  height: 44px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 73px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.one-project__collage_bottom_img {
+  margin: 143px auto;
+  display: block;
+  width: 1314px;
+}

@@ -84,6 +84,34 @@
                 View more photo
             </button>
         </section>
+        <section class="one-project__collage-block">
+            <div class="gallery__bottom">
+                @@include("./html/sideComp.html",{
+                    "class_wrapper" : "gallery__bottom_side_text_bottom",
+                    "title" : "MAKE request",
+                    "line_margin" : "gallery__bottom_line"
+                })
+                <p class="gallery__bottom_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="img/mainPage/Collage.webp" alt="Collage" class="gallery__bottom_collage">
+                <p class="gallery__bottom_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
+                @@include("./html/commonBtn.html",{
+                    "class1" : "gallery__bottom_btn",
+                    "class2" : " ",
+                    "title" : "Make request"
+                })
+            </div>
+            <div class="one-project__collage-block_bottom">
+                <p class="one-project__collage-block_bottom_title">
+                    Next project
+                </p>
+                <p class="one-project__collage-block_bottom_descr">
+                    Perfect proportions
+                </p>
+                <div class="one-project__collage_bottom_img">
+                    <img src="./img/OneProjects/Rectangle 2.5.webp" alt="img">
+                </div>
+            </div>
+        </section>
         <script src="./scripts/main.js"></script>
     </body>
 </html>
