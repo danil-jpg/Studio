@@ -5,7 +5,8 @@ window.addEventListener("DOMContentLoaded", () => {
   const mainPage = document.querySelector(".mainPage"),
     blogPage = document.querySelector(".blogPage"),
     newsPage = document.querySelector(".one-new"),
-    projectsPage = document.querySelector(".projectsPage");
+    projectsPage = document.querySelector(".projectsPage"),
+    oneProjectPage = document.querySelector(".oneProjectPage");
 
   const burgerTrigger = document.querySelector(".laptop__icon"),
     burgerLogo = document.querySelector(".header__logo"),
@@ -188,5 +189,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
     copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
     burger.setAttribute("src", "../img/header/burger-img_black.webp");
+  }
+
+  if (oneProjectPage) {
+    const oneProjectTitle = document.querySelector(".project-top__title");
+
+    if (window.innerWidth <= 1024) {
+      oneProjectTitle.innerHTML = "Residence  <br/> by the lighthouse";
+    } else if (window.innerWidth > 1024) {
+      oneProjectTitle.innerHTML = "Residence by the lighthouse";
+    }
   }
 });
