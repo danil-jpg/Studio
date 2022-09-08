@@ -6,7 +6,8 @@ window.addEventListener("DOMContentLoaded", () => {
     blogPage = document.querySelector(".blogPage"),
     newsPage = document.querySelector(".one-new"),
     projectsPage = document.querySelector(".projectsPage"),
-    oneProjectPage = document.querySelector(".oneProjectPage");
+    oneProjectPage = document.querySelector(".oneProjectPage"),
+    aboutPage = document.querySelector(".aboutPage");
 
   const burgerTrigger = document.querySelector(".laptop__icon"),
     burgerLogo = document.querySelector(".header__logo"),
@@ -199,5 +200,35 @@ window.addEventListener("DOMContentLoaded", () => {
     } else if (window.innerWidth > 1024) {
       oneProjectTitle.innerHTML = "Residence by the lighthouse";
     }
+  }
+
+  if (aboutPage) {
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 12,
+      slidesPerView: 1.2,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      modules: [Navigation, Pagination],
+      centeredSlides: false,
+      roundLengths: false,
+      loop: false,
+
+      breakpoints: {
+        1440: {
+          slidesPerView: 1.2,
+        },
+        1024: {
+          slidesPerView: 1.2,
+        },
+        768: {
+          slidesPerView: 1.2,
+        },
+        375: {
+          slidesPerView: 1.2,
+        },
+      },
+    });
   }
 });
