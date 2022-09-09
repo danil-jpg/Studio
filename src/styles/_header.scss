@@ -104,6 +104,9 @@
 }
 
 @media screen and (max-width: 1439px) {
+  .header {
+    font-size: 16px;
+  }
   .slide__bottom_header.header_active {
     animation: 5s show ease;
     display: flex !important;
@@ -247,6 +250,9 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .header {
+    font-size: 16px;
+  }
   .header__list.burger-active {
     transform: translate(0px, 307px) !important;
   }
@@ -307,6 +313,9 @@
 }
 
 @media (min-width: 769px) and (max-width: 1439px) {
+  .header {
+    font-size: 16px;
+  }
   .oneProject {
     .header__logo {
       transform: translate(2px, -5px);
@@ -323,6 +332,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    font-size: 16px;
+  }
   .laptop__burger {
     .laptop__icon_close {
       transform: translate(-6px, 2px);

@@ -7,7 +7,8 @@ window.addEventListener("DOMContentLoaded", () => {
     newsPage = document.querySelector(".one-new"),
     projectsPage = document.querySelector(".projectsPage"),
     oneProjectPage = document.querySelector(".oneProjectPage"),
-    aboutPage = document.querySelector(".aboutPage");
+    aboutPage = document.querySelector(".aboutPage"),
+    contactsPage = document.querySelector(".contacts");
 
   const burgerTrigger = document.querySelector(".laptop__icon"),
     burgerLogo = document.querySelector(".header__logo"),
@@ -36,47 +37,53 @@ window.addEventListener("DOMContentLoaded", () => {
   if (mainPage) {
     slider();
 
-    window.addEventListener("resize", () => {
-      if (window.innerWidth <= 375) {
-        let galleryWrapper2 = document.querySelector(
-            ".gallery__imgs_texts_2 .gallery__imgs_bottom-text"
-          ),
-          galleryWrapper3 = document.querySelector(
-            ".gallery__imgs_texts_3 .gallery__imgs_bottom-text"
-          ),
-          galleryWrapper4 = document.querySelector(
-            ".gallery__imgs_texts_4 .gallery__imgs_bottom-text"
-          );
+    const textTochange = document.querySelector(
+      " .footer__content_block .footer__title"
+    );
+    console.log(textTochange);
+    if (window.innerWidth <= 375) {
+      let galleryWrapper2 = document.querySelector(
+          ".gallery__imgs_texts_2 .gallery__imgs_bottom-text"
+        ),
+        galleryWrapper3 = document.querySelector(
+          ".gallery__imgs_texts_3 .gallery__imgs_bottom-text"
+        ),
+        galleryWrapper4 = document.querySelector(
+          ".gallery__imgs_texts_4 .gallery__imgs_bottom-text"
+        );
 
-        galleryWrapper2.textContent = "Eyewear store interior";
-        galleryWrapper3.textContent = "Minimalist style home";
-        galleryWrapper4.textContent = "Eyewear store interior";
-      } else if (380 < window.innerWidth && window.innerWidth <= 768) {
-        let galleryWrapper1 = document.querySelector(
-            ".gallery__imgs_texts_1 .gallery__imgs_bottom-text"
-          ),
-          galleryWrapper3 = document.querySelector(
-            ".gallery__imgs_texts_3 .gallery__imgs_bottom-text"
-          ),
-          galleryWrapper4 = document.querySelector(
-            ".gallery__imgs_texts_4 .gallery__imgs_bottom-text"
-          ),
-          galleryImg1 = document.querySelector(".img_1"),
-          galleryImg3 = document.querySelector(".img_3"),
-          galleryImg4 = document.querySelector(".img_4"),
-          galleryImg5 = document.querySelector(".source_img_5");
+      galleryWrapper2.textContent = "Eyewear store interior";
+      galleryWrapper3.textContent = "Minimalist style home";
+      galleryWrapper4.textContent = "Eyewear store interior";
+    } else if (380 < window.innerWidth && window.innerWidth <= 768) {
+      let galleryWrapper1 = document.querySelector(
+          ".gallery__imgs_texts_1 .gallery__imgs_bottom-text"
+        ),
+        galleryWrapper3 = document.querySelector(
+          ".gallery__imgs_texts_3 .gallery__imgs_bottom-text"
+        ),
+        galleryWrapper4 = document.querySelector(
+          ".gallery__imgs_texts_4 .gallery__imgs_bottom-text"
+        ),
+        galleryImg1 = document.querySelector(".img_1"),
+        galleryImg3 = document.querySelector(".img_3"),
+        galleryImg4 = document.querySelector(".img_4"),
+        galleryImg5 = document.querySelector(".source_img_5");
 
-        galleryWrapper1.textContent = "Residence by the lighthouse";
-        galleryWrapper3.textContent = "Eyewear storeinterior";
-        galleryWrapper4.textContent = "House on a Hillside";
+      galleryWrapper1.textContent = "Residence by the lighthouse";
+      galleryWrapper3.textContent = "Eyewear storeinterior";
+      galleryWrapper4.textContent = "House on a Hillside";
 
-        galleryImg1.setAttribute("src", "../img/mainPage/Pic_1_change.webp");
-        galleryImg3.setAttribute("src", "../img/mainPage/Pic_3_change.webp");
+      galleryImg1.setAttribute("src", "../img/mainPage/Pic_1_change.webp");
+      galleryImg3.setAttribute("src", "../img/mainPage/Pic_3_change.webp");
 
-        galleryImg4.setAttribute("src", "../img/mainPage/Pic_4_change.webp");
-        galleryImg5.setAttribute("srcset", "../img/mainPage/Pic_5_change.webp");
-      }
-    });
+      galleryImg4.setAttribute("src", "../img/mainPage/Pic_4_change.webp");
+      galleryImg5.setAttribute("srcset", "../img/mainPage/Pic_5_change.webp");
+    }
+
+    if (window.innerWidth <= 1024) {
+      textTochange.textContent = "Get in touch";
+    }
   }
 
   burgerTrigger.addEventListener("click", () => {
@@ -233,5 +240,14 @@ window.addEventListener("DOMContentLoaded", () => {
         },
       },
     });
+  }
+
+  if (contactsPage) {
+    const textTochange = document.querySelector(
+      ".contacts .footer__content_block .footer__title"
+    );
+    if (window.innerWidth <= 1024) {
+      textTochange.textContent = "Get in touch";
+    }
   }
 });

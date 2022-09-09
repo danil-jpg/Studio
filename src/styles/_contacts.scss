@@ -1,0 +1,117 @@
+.contacts {
+  overflow: hidden;
+  .footer {
+    .footer__btn_wrapper {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contacts {
+    .footer {
+      background-repeat: no-repeat;
+      min-height: 744px;
+      height: 100vh;
+      background-size: 100% 100%;
+      margin: 0 auto;
+      background-size: cover;
+      .footer__btn_wrapper {
+        display: none;
+      }
+      .footer__content_block {
+        margin-top: 183px;
+      }
+
+      .footer__copyright {
+        transform: translate(-130px, 49px);
+      }
+
+      .footer__pic {
+        transform: translate(972px, 6px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .contacts {
+    .footerHomePage {
+      margin: 0 auto;
+      background-size: cover;
+      padding-top: 96px;
+      /* height: 100vh; */
+      height: 671px;
+
+      background-image: url("../img/Contacts/contacts_footer-laptop.webp");
+      background-repeat: no-repeat;
+      .footer__copyright {
+        /* margin-top: 12px; */
+        transform: translate(-99px, 93px);
+      }
+
+      .footer__pic {
+        transform: translate(595px, 48px);
+      }
+      .footer__content_block {
+        width: 712px;
+      }
+      .footer__cities {
+        width: 511px;
+      }
+
+      .footer__adress {
+        line-height: 1.82;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .contacts {
+    .footerHomePage {
+      padding-top: 254px;
+      height: 770px;
+
+      background-image: url("../img/Contacts/footer__blog__tablet.webp");
+      background-repeat: no-repeat;
+      .footer__content_block {
+        width: 520px;
+      }
+      .footer__cities {
+        width: 502px;
+      }
+      .footer__copyright {
+        margin-top: 159px;
+        transform: translate(-77px, 93px);
+      }
+
+      .footer__pic {
+        transform: translate(378px, 48px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    .footerHomePage {
+      padding-top: 39px;
+
+      height: 714px;
+
+      .footer__content_block {
+        width: 327px;
+      }
+
+      .footer__cities {
+        width: 308px;
+      }
+      .footer__copyright {
+        transform: translate(0, -25px);
+      }
+      .footer__pic {
+        transform: translate(2px, -34px);
+      }
+    }
+  }
+}
