@@ -203,6 +203,8 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   if (aboutPage) {
+    copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
+
     const swiper = new Swiper(".swiper", {
       spaceBetween: 12,
       slidesPerView: 1.2,

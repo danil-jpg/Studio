@@ -1,5 +1,8 @@
+@use "sass:math";
+
 .aboutPage {
-  // height: 1000px;
+  min-height: 4885px;
+  overflow: hidden;
   .header {
     * {
       color: #000000;
@@ -8,7 +11,7 @@
 }
 
 @function stripUnit($value) {
-  @return $value / ($value * 0 + 1);
+  @return math.div($value, ($value * 0 + 1));
 }
 
 @function rem($pxValue) {
@@ -253,6 +256,9 @@ html {
   width: 303px;
   margin-top: 34px;
   display: grid;
+
+  grid-template-rows: 1fr 1fr;
+
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 18px;
   grid-column-gap: 80px;
@@ -268,6 +274,7 @@ html {
 }
 
 .about-descr__bottom {
+  position: relative;
   width: 1145px;
   margin: 0 auto 0;
   height: 1019px;
@@ -276,8 +283,8 @@ html {
   height: 100%;
   width: 100%;
   display: grid;
-
   grid-template-columns: 572.5px 1fr;
+  grid-template-rows: 1fr 1fr;
   margin-top: 179px;
   grid-row-gap: 46px;
   grid-column-gap: 58px;
@@ -313,12 +320,32 @@ html {
 
   margin-top: 49px;
   width: 383px;
+  position: relative;
+  ::before {
+    content: "“";
+    position: absolute;
+    top: 0;
+    left: -10px;
+  }
+}
+.about-descr__bottom-descr::before {
+  content: "“";
+  position: absolute;
+  top: 2px;
+  left: -49px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(36);
+  line-height: rem(44);
+
+  color: #080808;
 }
 .about-img-3 {
   position: relative;
   padding: 0 0 39%;
   width: 100%;
-  height: 62%;
+  height: 84%;
 
   img {
     top: 0;
@@ -333,9 +360,12 @@ html {
 .about-img-4 {
   position: relative;
   width: 55%;
-  height: 97%;
+
   left: 50px;
-  top: -98px;
+
+  height: 78%;
+  left: 50px;
+  top: -2px;
   img {
     top: 0;
     left: 0;
@@ -350,16 +380,153 @@ html {
   display: flex;
   justify-content: space-between;
 
-  position: relative;
-  top: 20px;
+  margin-top: 120px;
+
   width: 431px;
-  .about-descr__small-text-block:nth-of-type(2) {
-    transform: translate(34px, 0);
-  }
+
   .about-descr__small-text-block:first-of-type {
-    .years__descr:first-of-type {
+    .years__descr {
       width: 59px;
     }
+  }
+
+  .about-descr__small-text-block:nth-of-type(2) {
+    transform: translate(12px, 0);
+
+    .years__descr {
+      width: 96px;
+    }
+  }
+}
+
+.about-descr__preBottom-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: rem(14);
+  line-height: lh(24, 14);
+
+  width: 516px;
+  text-align: initial;
+  position: absolute;
+  right: -2px;
+  margin-top: -148px;
+}
+
+.picture-about {
+  background-color: black;
+  margin-top: 140px;
+  .picture__title {
+    color: #ffffff;
+    transform: translate(-18px, 346px);
+  }
+
+  .picture_descr {
+    color: #ffffff;
+
+    opacity: 0.6;
+  }
+}
+.about-contacts__background {
+  background-color: #ececec;
+  height: 657px;
+  width: 100vw;
+  margin: 0;
+  display: inline-block;
+
+  .copyright-wrapper {
+    margin: 117px auto 0;
+  }
+}
+.about-contacts {
+  // display: inline-block;
+  width: 1040px;
+  margin: 0 auto;
+}
+.about-contatcts__question {
+  height: 96px;
+  width: 424px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(36);
+  line-height: lh(51, 36);
+
+  margin-top: 137px;
+
+  color: #080808;
+}
+.about-contacts__bottom-wrapper {
+  margin-top: 135px;
+
+  grid-column-gap: 209px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .blog__form {
+    left: -25px;
+
+    .blog-footer_email {
+    }
+    .blog__arrow-right {
+      right: 13px;
+      top: 3px;
+    }
+    .blog__hor-line {
+      transform: translate(23px, -3px);
+      background: #515151;
+    }
+  }
+}
+
+.about-contacts__bottom-text {
+  width: 366px;
+  justify-self: center;
+  margin-top: -7px;
+  margin-left: 23px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: rem(14);
+  line-height: lh(24, 14);
+  color: #080808;
+}
+.about-contacts__etc-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  grid-column: 2/3;
+  width: 357px;
+  justify-self: center;
+  margin-left: 13px;
+}
+.about-contacts__email {
+  width: 100px;
+  height: 11px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(11);
+  line-height: lh(13, 11);
+  letter-spacing: 0.06em;
+
+  color: #080808;
+}
+.about-contacts__language {
+  width: 78px;
+  margin: 0;
+  width: 76px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  a {
+    height: 11px;
+    width: 16px;
+    font-weight: 600;
+    font-size: rem(11);
+    line-height: lh(13, 11);
+    letter-spacing: 0.06em;
+    color: #080808;
   }
 }
 
