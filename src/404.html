@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404</title>
+        <link rel="stylesheet" href="./styles/main.min.css">
+    </head>
+    <body class="eror-page404">
+        @@include("./html/header.html",{
+            "class" : "404"
+        })
+        <main>
+            <section class="eror">
+                @@include("./html/sideComp.html",{
+                    "title" : "404",
+                    "href" : "./404.html",
+                    "class_wrapper" : "eror__sideBtn"
+                })
+                <div class="error__text-wrapper">
+                    <p class="error__title">Page not found</p>
+                    <p class="eror__descr">Something went wrong. Page not found</p>
+                    @@include("./html/discoverBtn.html",{
+                        "class" : "eror__btn",
+                        "title" : "Go to main",
+                        "href" : "./index.html"
+                    })
+                </div>
+            </section>
+        </main>
+        @@include("./html/copyrightAndLogo.html")
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>

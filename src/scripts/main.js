@@ -8,7 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
     projectsPage = document.querySelector(".projectsPage"),
     oneProjectPage = document.querySelector(".oneProjectPage"),
     aboutPage = document.querySelector(".aboutPage"),
-    contactsPage = document.querySelector(".contacts");
+    contactsPage = document.querySelector(".contacts"),
+    erorPage = document.querySelector(".eror-page404");
 
   const burgerTrigger = document.querySelector(".laptop__icon"),
     burgerLogo = document.querySelector(".header__logo"),
@@ -248,6 +249,18 @@ window.addEventListener("DOMContentLoaded", () => {
     );
     if (window.innerWidth <= 1024) {
       textTochange.textContent = "Get in touch";
+    }
+  }
+
+  if (erorPage) {
+    const textTochange = document.querySelector(".header__logo");
+
+    textTochange.innerHTML = "<a href='./index.html'>HILIGHT</a>";
+
+    copyRightImg.setAttribute("src", "../img/Contacts/eror-copyrightImg.webp");
+
+    if (window.innerWidth <= 1024) {
+      textTochange.innerHTML = `<a href="./index.html">Logo</a>`;
     }
   }
 });
