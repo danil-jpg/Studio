@@ -204,6 +204,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (aboutPage) {
     copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
+    burger.setAttribute("src", "../img/header/burger-img_black.webp");
 
     const swiper = new Swiper(".swiper", {
       spaceBetween: 12,
