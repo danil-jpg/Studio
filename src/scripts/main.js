@@ -106,6 +106,12 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   if (blogPage) {
+    const textToChange = document.querySelector(".blog-footer_descr");
+
+    if (window.innerWidth <= 1439) {
+      textToChange.textContent =
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.";
+    }
     if (window.innerWidth <= 1023) {
       blogFooterText.textContent =
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.";

@@ -549,11 +549,12 @@ html {
     }
   }
   .blog-footer {
+    background-size: cover;
     background-image: url(../img/Blog/blog-footer_tablet.webp);
     margin-top: 100px;
     height: 540px;
     background-position: center;
-    background-size: contain;
+    // background-size: contain;
   }
 
   .blog-footer__content {
@@ -757,4 +758,10 @@ html {
   .blog__form {
     transform: translate(-7px, -46px);
   }
+
+  // .blogPage {
+  //   .copyright-wrapper {
+  //     margin-top: 102px;
+  //   }
+  // }
 }

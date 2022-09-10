@@ -503,6 +503,9 @@
     width: 672px;
     height: 267px;
   }
+  .gallery__bottom_descr {
+    transform: translate(2px, -3px);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -623,5 +626,11 @@
 
   .project-top__icons-wrapper {
     margin-top: 23px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 376px) {
+  .project-top {
+    background-position: 0 0;
   }
 }

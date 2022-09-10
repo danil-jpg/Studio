@@ -782,9 +782,10 @@ html {
     margin-top: 48px;
     width: 117px;
   }
-
-  .copyright-wrapper {
-    margin-top: 86px;
+  .aboutPage {
+    .copyright-wrapper {
+      margin-top: 86px;
+    }
   }
 
   .about-contacts__background {
@@ -820,9 +821,10 @@ html {
     text-align: center;
     width: 99%;
   }
-
-  .slide__pagination {
-    display: none;
+  .about-center__left {
+    .slide__pagination {
+      display: none;
+    }
   }
 
   .about-center__right {
@@ -958,5 +960,54 @@ html {
 
   .about-contacts__background .copyright-wrapper {
     margin: 90px auto 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutPage {
+    .picture__pic_6 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 376px) {
+  .about-title__title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .about__img-1 {
+    margin: 0 auto;
+    padding-bottom: 39.440678%;
+    width: 60%;
+    height: 11%;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .about-descr__top-template {
+    width: 40%;
+  }
+
+  .about-descr__top-down-text {
+    position: static;
+    width: 71%;
+    margin: 28px auto 0;
+  }
+
+  .about-descr__bottom-name {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  .about-descr__bottom-statistic-wrapper {
+    display: none;
+  }
+
+  .about-descr__preBottom-text {
+    margin: 0 auto;
+    margin-top: -323px;
   }
 }
