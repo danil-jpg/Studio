@@ -511,3 +511,26 @@
     margin-top: 24px;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .pop-up__thanks-message-wrapper {
+    width: 520px;
+    padding-top: 12px;
+    height: 294px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pop-up__thanks-message-wrapper {
+    max-width: 327px;
+    min-height: 339px;
+  }
+
+  .pop-up__thanks-descr {
+    width: 279px;
+  }
+
+  .pop-up__btn-thanks {
+    margin: 30px auto;
+  }
+}
