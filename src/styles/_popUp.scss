@@ -21,7 +21,7 @@
   pointer-events: all;
   transition: 0.3s;
   opacity: 1;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .pop-up.pop-up_active {
   transition: 1.3s;
