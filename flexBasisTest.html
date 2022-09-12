@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex-basis</title>
+    </head>
+    <body>
+        <div class="content">
+            <p class="f1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet odit eum assumenda ullam totam sapiente corporis impedit possimus, at ipsum?</p>
+            <p class="f2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit aut corporis illum nostrum?</p>
+        </div>
+        <style>
+			.content{
+				margin: 300px auto;
+				display: flex;
+				flex-basis: 500px;
+				/* min-height: 500px; */
+
+				background-color: black;
+				color: aliceblue;
+				/* flex-direction: column; */
+				box-sizing: border-box;
+				/* flex-shrink: 1; */
+			}
+
+			.f1{
+				/* flex-shrink: 2; */
+				box-sizing: border-box;
+				background-color: rgba(149, 28, 185, 0.671);
+				flex-basis: 100px;
+				/* flex-grow: 3; */
+				border: 1px solid rgba(209, 116, 10, 0.904);
+			}
+
+			.f2{
+				/* flex-shrink: 3; */
+				box-sizing: border-box;
+				background-color: yellowgreen;
+				border: 1px solid red;
+				/* flex-grow: 2; */
+				flex-basis: 100px;
+			}
+        </style>
+    </body>
+</html>
