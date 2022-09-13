@@ -174,8 +174,8 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   if (newsPage) {
-    burger.setAttribute("src", "../img/header/burger-img_black.webp");
-    copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
+    burger.setAttribute("src", "img/header/burger-img_black.webp");
+    copyRightImg.setAttribute("src", "img/OneNew/black-copyright.webp");
     if (window.innerWidth <= 1439) {
       changeText2.textContent =
         "Ut arcu tortor, hendrerit eget sollicitudin sed, tincidunt a lectus. Cras gravida ultricies ante sit amet consectetur. Maecenas sed arcu tempor, posuere odio pharetra, faucibus risus. Etiam fermentum felis quis aliquet viverra. Mauris in odio nec mi pellentesque placerat. Praesent at metus in lacus posuere molestie. Aliquam consequat, neque eget congue feugiat, lectus leo condimentum lorem, scelerisque euismod nisi ipsum nec metus. Mauris semper felis venenatis eros interdum sollicitudin.";
@@ -247,8 +247,8 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
-    burger.setAttribute("src", "../img/header/burger-img_black.webp");
+    copyRightImg.setAttribute("src", "/img/OneNew/black-copyright.webp");
+    burger.setAttribute("src", "/img/header/burger-img_black.webp");
   }
 
   if (oneProjectPage) {
@@ -262,8 +262,8 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   if (aboutPage) {
-    copyRightImg.setAttribute("src", "../img/OneNew/black-copyright.webp");
-    burger.setAttribute("src", "../img/header/burger-img_black.webp");
+    copyRightImg.setAttribute("src", "img/OneNew/black-copyright.webp");
+    burger.setAttribute("src", "img/header/burger-img_black.webp");
 
     const swiper = new Swiper(".swiper", {
       spaceBetween: 12,
@@ -308,7 +308,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     textTochange.innerHTML = "<a href='./index.html'>HILIGHT</a>";
 
-    copyRightImg.setAttribute("src", "../img/Contacts/eror-copyrightImg.webp");
+    copyRightImg.setAttribute("src", "img/Contacts/eror-copyrightImg.webp");
 
     if (window.innerWidth <= 1024) {
       textTochange.innerHTML = `<a href="./index.html">Logo</a>`;
