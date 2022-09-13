@@ -43,6 +43,10 @@ const paths = {
     src: "src/img/**/*",
     dest: "docs/img/",
   },
+  imagesRaw: {
+    src: "src/imgRaw/**/*",
+    dest: "docs/imgRaw/",
+  },
   fonts: {
     src: "src/fonts/*",
     dest: "docs/fonts/",
@@ -181,9 +185,13 @@ function img() {
     .pipe(gulp.dest(paths.images.dest));
 }
 
+function imgRaw() {
+  return gulp.src(paths.imagesRaw.src).pipe(gulp.dest(paths.imagesRaw.dest));
+}
+
 const build = gulp.series(
   clean,
-  gulp.parallel(pagesHtml, componentsHtml, styles, scripts, img, fonts),
+  gulp.parallel(pagesHtml, componentsHtml, styles, scripts, img, imgRaw, fonts),
   watch
 );
 
