@@ -248,7 +248,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     copyRightImg.setAttribute("src", "/img/OneNew/black-copyright.webp");
-    burger.setAttribute("src", "/img/header/burger-img_black.webp");
+    burger.setAttribute("src", "img/header/burger-img_black.webp");
   }
 
   if (oneProjectPage) {
