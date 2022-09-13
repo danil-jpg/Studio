@@ -537,7 +537,11 @@ html {
     color: #080808;
   }
 }
-
+.picture-about__background {
+  width: 100%;
+  background-color: black;
+  max-width: 0 auto;
+}
 @media screen and (min-width: 1440px) {
   .header {
     .header__list {
