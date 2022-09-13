@@ -119,7 +119,10 @@
                 })
                 <div class="gallery__imgs_template">
                     <div class="gallery__imgs_wrapper pic_1">
-                        <img src="img/mainPage/Pic_1.webp" alt="Pic_1" class="img_1">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/mainPage/Pic_1.webp">
+                            <img src="img/mainPage/Pic_1.webp" alt="Pic_1" class="img_1">
+                        </picture>
                         <div class="gallery__imgs_texts gallery__imgs_texts_1">
                             <div class="gallery__imgs_top-text">
                                 <p class="word-1">
@@ -169,6 +172,7 @@
                     <div class="gallery__imgs_wrapper pic_3">
                         <picture>
                             <source srcset="img/mainPage/Pic_2_laptop.webp" media="(max-width:767px)">
+                            <source srcset="img/mainPage/Pic_3_change.webp" media="(max-width: 1023px)">
                             <img src="img/mainPage/Pic_3.webp" alt="Pic_2" class="img_3">
                         </picture>
                         <div class="gallery__imgs_texts gallery__imgs_texts_3">
@@ -192,7 +196,11 @@
                         </div>
                     </div>
                     <div class="gallery__imgs_wrapper pic_4">
-                        <img src="img/mainPage/Pic_4.webp" alt="Pic_1" class="img_4">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="img/mainPage/Pic_4.webp">
+                            <source media="(max-width: 1023px)" srcset="img/mainPage/Pic_4_change.webp">
+                            <img src="img/mainPage/Pic_4.webp" alt="Pic_1" class="img_4">
+                        </picture>
                         <div class="gallery__imgs_texts gallery__imgs_texts_4">
                             <div class="gallery__imgs_top-text">
                                 <p class="word-1">

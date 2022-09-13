@@ -41,9 +41,11 @@ window.addEventListener("DOMContentLoaded", () => {
     const textTochange = document.querySelector(
       " .footer__content_block .footer__title"
     );
-    console.log(textTochange);
     if (window.innerWidth <= 375) {
-      let galleryWrapper2 = document.querySelector(
+      let galleryWrapper1 = document.querySelector(
+          ".gallery__imgs_texts_1 .gallery__imgs_bottom-text"
+        ),
+        galleryWrapper2 = document.querySelector(
           ".gallery__imgs_texts_2 .gallery__imgs_bottom-text"
         ),
         galleryWrapper3 = document.querySelector(
@@ -52,7 +54,7 @@ window.addEventListener("DOMContentLoaded", () => {
         galleryWrapper4 = document.querySelector(
           ".gallery__imgs_texts_4 .gallery__imgs_bottom-text"
         );
-
+      galleryWrapper1.textContent = "Residence by the lighthouse";
       galleryWrapper2.textContent = "Eyewear store interior";
       galleryWrapper3.textContent = "Minimalist style home";
       galleryWrapper4.textContent = "Eyewear store interior";
@@ -75,11 +77,11 @@ window.addEventListener("DOMContentLoaded", () => {
       galleryWrapper3.textContent = "Eyewear storeinterior";
       galleryWrapper4.textContent = "House on a Hillside";
 
-      galleryImg1.setAttribute("src", "../img/mainPage/Pic_1_change.webp");
-      galleryImg3.setAttribute("src", "../img/mainPage/Pic_3_change.webp");
+      // galleryImg1.setAttribute("src", "../img/mainPage/Pic_1_change.webp");
+      // galleryImg3.setAttribute("src", "../img/mainPage/Pic_3_change.webp");
 
-      galleryImg4.setAttribute("src", "../img/mainPage/Pic_4_change.webp");
-      galleryImg5.setAttribute("srcset", "../img/mainPage/Pic_5_change.webp");
+      // galleryImg4.setAttribute("src", "../img/mainPage/Pic_4_change.webp");
+      // galleryImg5.setAttribute("srcset", "../img/mainPage/Pic_5_change.webp");
     }
 
     if (window.innerWidth <= 1024) {
@@ -168,7 +170,7 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    burger.setAttribute("src", "../img/header/burger-img_black.webp");
+    burger.setAttribute("src", "img/header/burger-img_black.webp");
   }
 
   if (newsPage) {
